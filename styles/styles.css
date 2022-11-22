@@ -40,11 +40,10 @@ header {
 }
 
 
-.front-image {
-  top: 310px;
-  position: absolute;
+.background-front {
   width: 100%;
   min-height: 500px;
+  text-align: center;
 }
 
 
