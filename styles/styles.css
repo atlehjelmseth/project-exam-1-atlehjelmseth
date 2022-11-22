@@ -4,7 +4,7 @@ body {
   margin: auto;
   font-family: "acto";
   background-color: #071A30;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 a {
@@ -44,17 +44,16 @@ header {
 
 
 
-
-
 /* navigation */
 
 
 .nav_top_front {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   position: relative;
-  top: 40px;
+  top: 50px;
   max-height: 50px;
   background-color: rgb(7, 26, 48, 0.7);
   z-index: 1;
@@ -121,7 +120,7 @@ nav li {
   display: block;
   width: 100%;
   min-height: 600px;
-  background-image: linear-gradient(0deg, rgba(255, 230, 0, 0.1), rgba(255, 230, 0, 0.1)), url(/images/AdobeStock_265023943grå.jpg);
+  background-image: linear-gradient(0deg, rgba(255, 230, 0, 0.1), rgba(255, 230, 0, 0.1)), url(/images/front_image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -132,9 +131,10 @@ nav li {
   text-align: center;
   max-width: 350px;
   position: relative;
-  left: 20%;
   top: 200px;
+  margin: auto;
   font-family:'adobe handwriting tiffany', Tahoma, Geneva, Verdana, sans-serif;
+  color: #071A30;
 }
 
 .text-button-front a {
@@ -162,7 +162,7 @@ nav li {
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: 50px auto 0 auto;
-
+  background-color: gold 0.5;
   border-radius: 10px;
 }
 
@@ -172,14 +172,19 @@ nav li {
 
 /* home page carousel */
 .carusel {
-  height: 300px;
+  min-height: 500px;
   background-color: #071A30;
 }
-
+.import-posts {
+  color: white;
+  text-align: center;
+}
 
 /* footer */
 
 footer {
   text-align: center;
   color: gold;
+  padding: 20px 0px 20px 0px;
+  background-color: #3f4a55;
 }
