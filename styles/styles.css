@@ -4,7 +4,7 @@ body {
   margin: auto;
   font-family: "acto";
   background-color: #071A30;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 a {
@@ -120,7 +120,7 @@ nav li {
   display: block;
   width: 100%;
   min-height: 600px;
-  background-image: linear-gradient(0deg, rgba(255, 230, 0, 0.1), rgba(255, 230, 0, 0.1)), url(/images/front_image.jpg);
+  background-image: linear-gradient(0deg, rgba(255, 230, 0, 0.1), rgba(255, 230, 0, 0.1)), url(/images/AdobeStock_265023943grå.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -133,7 +133,6 @@ nav li {
   position: relative;
   top: 200px;
   margin: auto;
-  font-family:'adobe handwriting tiffany', Tahoma, Geneva, Verdana, sans-serif;
   color: #071A30;
 }
 
@@ -178,6 +177,11 @@ nav li {
 .import-posts {
   color: white;
   text-align: center;
+}
+
+.import-posts img {
+  max-width: 300px;
+  height: 100%;
 }
 
 /* footer */

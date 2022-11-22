@@ -10,7 +10,8 @@ async function JacketsApiFunction() {
     console.log(results)
     for(let i = 0; i < results.length; i++) {
       posts.innerHTML += `<div class="import-posts">
-                                <img src="${results[i].content.rendered}">`;
+                                <img src="${results[i].content.rendered}">
+                                  `;
 
     }
   }catch (error) {
