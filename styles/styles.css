@@ -3,11 +3,13 @@
 body {
   margin: auto;
   font-family: "acto";
+  background-color: #071A30;
+  font-size: 0.8rem;
 }
 
 a {
   text-decoration: none;
-  color: #ffd500e3;
+  color: gold;
   text-transform:uppercase;
 }
 
@@ -28,7 +30,8 @@ header {
   display: flex;
   margin: auto;
   justify-self: center;
-  padding: 80px 0px 80px 0px;
+  padding-top: 50px;
+  max-width: 350px;
 }
 
 .background-top {
@@ -40,38 +43,143 @@ header {
 }
 
 
-.background-front {
-  width: 100%;
-  min-height: 500px;
-  text-align: center;
-}
+
 
 
 /* navigation */
 
 
-nav {
-  font-family: "acto", serif;
-  top: 0px;
+.nav_top_front {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 100%;
-  text-align: center;
-  background-color: rgb(7, 26, 48, 0.9);
+  position: relative;
+  top: 40px;
+  max-height: 50px;
+  background-color: rgb(7, 26, 48, 0.7);
+  z-index: 1;
+  margin: auto; 
 }
 
-nav ul {
+.nav_top_front ul {
   padding: 0px;
+  max-width: 1200px;
+  text-align: left;
 }
 
 nav li {
   display: inline-block;
-  padding: 0px 30px 0px 30px;
+  padding: 10px 30px 10px 30px;
 
 }
 
+.nav_top_front li:hover {
+  text-decoration: underline;
+}
 
-/* carousel */
+.nav_bottom_front {
+  text-align: center;
+  background-color: rgb(7, 26, 48, 0.9);
+  max-width: 1000px;
+  margin: auto;
+  border-bottom: solid 0.5px gold;
+}
+
+.nav_bottom_front ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.nav_bottom_front li {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+}
+
+.nav_bottom_front li:after {
+  content: "";
+  position: absolute;
+  background-color: gold;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -14px;
+  transition: 0.3s;
+}
+
+.nav_bottom_front li:hover:after {
+  width: 100%;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/* home page */
+
+.background-front {
+  display: block;
+  width: 100%;
+  min-height: 600px;
+  background-image: linear-gradient(0deg, rgba(255, 230, 0, 0.1), rgba(255, 230, 0, 0.1)), url(/images/AdobeStock_265023943grå.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-button-front {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 350px;
+  position: relative;
+  left: 20%;
+  top: 200px;
+  font-family:'adobe handwriting tiffany', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-button-front a {
+  color: black;
+
+}
+
+.front_text_first {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.front_text_second {
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.button_front {
+  max-width: 200px;
+  padding: 10px 20px 10px 20px;
+  border: 2px solid #071A30;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 50px auto 0 auto;
+
+  border-radius: 10px;
+}
+
+.button_front:hover {
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+}
+
+/* home page carousel */
 .carusel {
   height: 300px;
   background-color: #071A30;
+}
+
+
+/* footer */
+
+footer {
+  text-align: center;
+  color: gold;
 }
