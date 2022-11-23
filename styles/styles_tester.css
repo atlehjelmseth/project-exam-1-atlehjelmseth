@@ -256,7 +256,6 @@ nav li {
 }
 
 input {
-
   display: none;
 }
 
@@ -273,6 +272,7 @@ input {
   flex-direction: column;
   margin: 0 auto 150px auto;
 }
+
 
 .container-header {
   position: relative;
