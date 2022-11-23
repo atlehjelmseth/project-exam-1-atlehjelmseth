@@ -115,16 +115,18 @@ nav li {
  li:after {
   content: "";
   position: absolute;
-  background-color: #3c8b06;
+  background-color: #76df31;
   height: 5px;
   width: 0%;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: -1px;
   transition: 0.3s;
+  
 }
 
  li:hover:after {
-  width: 100%;
+  width: 60%;
 }
 
 .active {
@@ -186,6 +188,7 @@ nav li {
   text-shadow: 0px 5px 10px rgb(0, 0, 0);
   position: relative;
   top: -32px;
+  -webkit-text-stroke: 2px black;
 }
 
 .button_front {
