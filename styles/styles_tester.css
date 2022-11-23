@@ -5,6 +5,10 @@
   src: url(/fonts/Turtles.otf);
 }
 
+@font-face {
+  font-family: 'halfshell';
+  src: url(/fonts/NinjaTurtles-AArm.otf);
+}
 body {
   margin: auto;
   font-family: "acto";
@@ -170,13 +174,14 @@ nav li {
 }
 
 .front_text_second {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0;
-  padding: 0;
+  padding: 5px;
   text-transform: uppercase;
   color: white;
   background-color: red;
   border: solid 2px black;
+  font-family: "halfshell";
 }
 
 .front_text_third {
