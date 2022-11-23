@@ -11,7 +11,7 @@
 }
 body {
   margin: auto;
-  font-family: "acto";
+  font-family: "Garamond";
   font-size: 1rem;
   background-color: #041b0d;
   max-width: 1500px;
@@ -168,7 +168,7 @@ nav li {
 
 .front_text_first {
   font-size: 1.2rem;
-  margin: 0;
+  margin: 0 0 10px 0;
   padding: 0;
   color: white;
 }
