@@ -343,7 +343,10 @@ input {
   object-fit: cover;
 }
 
+.card .image .dots{
 
+  text-align: center;
+}
 
 .dots div{
 
@@ -366,8 +369,8 @@ input {
 #s5:checked~.cards #slide3 {
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
     transform: translate3d(-70%, 0, -220px);
-    --current-color1: white;
-
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
 }
 
 #s1:checked~.cards #slide5,
@@ -377,7 +380,8 @@ input {
 #s5:checked~.cards #slide4 {
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
     transform: translate3d(-35%, 0, -120px);
-    --current-color1: white;
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
 }
 
 #s1:checked~.cards #slide1,
@@ -388,7 +392,7 @@ input {
     box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
     transform: translate3d(0, 0, 0);
     --current-color1: #fad00c;
-
+    --current-color2: #ECEAED;
 }
 
 #s1:checked~.cards #slide2,
@@ -398,8 +402,8 @@ input {
 #s5:checked~.cards #slide1 {
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
     transform: translate3d(35%, 0, -120px);
-    --current-color1: white;
-;
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
 }
 
 #s1:checked~.cards #slide3,
@@ -409,8 +413,8 @@ input {
 #s5:checked~.cards #slide2 {
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
     transform: translate3d(70%, 0, -220px);
-    --current-color1: white;
-
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
 }
 
 /* footer */
