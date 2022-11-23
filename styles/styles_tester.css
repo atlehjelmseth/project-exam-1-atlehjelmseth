@@ -104,6 +104,8 @@ nav li {
   top: -76px;
 }
 
+
+
  ul {
   display: flex;
   justify-content: center;
@@ -272,6 +274,25 @@ input {
   margin: 0 auto 150px auto;
 }
 
+.container-header {
+  position: relative;
+  top: -50px;
+  margin: auto;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+
+.click-to-start-carousel {
+  position: relative;
+  margin: auto;
+  top: -50px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
 .cards {
 
   position: relative;
@@ -303,6 +324,7 @@ input {
   padding: 30px 35px;
   width: 450px;
   border: solid 2px black;
+  right: 10%;
 }
 
 .card .image{
@@ -333,7 +355,7 @@ input {
 
 .dots div:nth-child(1){
 
-  background-color: var(--current-color1);
+  background-color: var(--marker_card_color);
 }
 
 
@@ -344,7 +366,7 @@ input {
 #s5:checked~.cards #slide3 {
   box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
   transform: translate3d(-70%, 0, -220px);
-  --current-color1: #041b0d;
+  --marker_card_color: #041b0d;
 }
 
 #s1:checked~.cards #slide5,
@@ -354,7 +376,7 @@ input {
 #s5:checked~.cards #slide4 {
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
   transform: translate3d(-35%, 0, -120px);
-  --current-color1: #041b0d;
+  --marker_card_color: #041b0d;
 }
 
 #s1:checked~.cards #slide1,
@@ -364,7 +386,7 @@ input {
 #s5:checked~.cards #slide5 {
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
   transform: translate3d(0, 0, 0);
-  --current-color1: white;
+  --marker_card_color: white;
 
 }
 
@@ -375,7 +397,7 @@ input {
 #s5:checked~.cards #slide1 {
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
   transform: translate3d(35%, 0, -120px);
-  --current-color1: #041b0d;
+  --marker_card_color: #041b0d;
 
 }
 
@@ -386,7 +408,7 @@ input {
 #s5:checked~.cards #slide2 {
   box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
   transform: translate3d(70%, 0, -220px);
-  --current-color1: #041b0d;
+  --marker_card_color: #041b0d;
 
 }
 
