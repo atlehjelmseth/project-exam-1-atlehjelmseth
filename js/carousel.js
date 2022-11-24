@@ -11,7 +11,7 @@ async function JacketsApiFunction() {
     console.log(results)
     
     for(let i = 0; i < results.length; i++) {
-      if (i === 3) { break; }
+      if (i === 4) { break; }
       const pictures = results[i]._embedded['wp:featuredmedia'][0].source_url;
       const title = results[i].title.rendered;
       const paragraph = results[i].excerpt.rendered;
