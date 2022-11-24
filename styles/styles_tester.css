@@ -351,3 +351,14 @@ footer {
   background-color: #032416;
   border-top: solid black 1px;
 }
+
+
+@media (min-width: 1900px) {
+  .eye_left {
+    border: 80px solid blue;
+  }
+
+  .eye_right {
+    border: 80px solid blue;
+  }
+}
