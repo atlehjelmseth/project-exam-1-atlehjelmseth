@@ -8,13 +8,15 @@ async function JacketsApiFunction() {
 
     posts.innerHTML = "";
     console.log(results)
+    
     for(let i = 0; i < results.length; i++) {
+      if (i === 5) { break; }
+      const pictures = results[i]._embedded['wp:featuredmedia'][0].source_url;
       posts.innerHTML += `<div class="import-posts">
-                                <img src="${results[i]._embedded.wp.featuredmedia.source_url}">
+                                <img src="${pictures}">
                                   `;
-
     }
-    console.log(results[i]._embedded['wp:featuredmedia'])
+
   }catch (error) {
     console.log("error")
   }
