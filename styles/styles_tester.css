@@ -30,7 +30,8 @@ img {
 }
 
 main {
-  z-index: 4;
+  background-color: black;
+  padding-bottom: 20px;
 }
 
 /* header */ 
@@ -281,15 +282,6 @@ input {
   color: white;
   text-transform: uppercase;
   font-size: 3.5rem;
-}
-
-.click-to-start-carousel {
-  position: relative;
-  margin: auto;
-  top: -50px;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 
