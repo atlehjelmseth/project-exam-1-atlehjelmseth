@@ -174,13 +174,4 @@ input {
     --current-color2: #404457;
 }
 
-/* footer */
-
-footer {
-  text-align: center;
-  color: white;
-  padding: 20px 0px 20px 0px;
-  background-color: #032416;
-  border-top: solid black 1px;
-}
 

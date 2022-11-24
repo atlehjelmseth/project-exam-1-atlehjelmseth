@@ -2,6 +2,7 @@ const url = "https://exam-one.eltprod.no/wp-json/wp/v2/posts?_embed";
 
 const posts = document.querySelector(".carousel");
 
+
 async function JacketsApiFunction() {
   try{const response = await fetch(url);
     const results = await response.json();
@@ -10,14 +11,22 @@ async function JacketsApiFunction() {
     console.log(results)
     
     for(let i = 0; i < results.length; i++) {
-      if (i === 5) { break; }
+      if (i === 3) { break; }
       const pictures = results[i]._embedded['wp:featuredmedia'][0].source_url;
+      const title = results[i].title.rendered;
+      const paragraph = results[i].excerpt.rendered;
+      console.log(pictures);
       posts.innerHTML += `<div class="import-posts">
                                 <img src="${pictures}">
+                                <h1>${title}</h1>
+                                ${paragraph}
+                                <a href="" class="button_carousel">Read more</a>
                                   `;
+                                  
     }
 
   }catch (error) {
+    posts.innerHTML = "error";
     console.log("error")
   }
 
