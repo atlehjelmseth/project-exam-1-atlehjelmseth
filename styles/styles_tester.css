@@ -353,12 +353,12 @@ footer {
 }
 
 
-@media (min-width: 1900px) {
+@media (min-width: 1800px) {
   .eye_left {
-    border: 80px solid blue;
+    border: 81px solid blue;
   }
 
   .eye_right {
-    border: 80px solid blue;
+    border: 81px solid blue;
   }
 }
