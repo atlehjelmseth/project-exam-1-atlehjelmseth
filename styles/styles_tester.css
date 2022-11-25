@@ -234,33 +234,9 @@ nav li {
 .carousel {
  display: flex;
   flex-direction: row;
-  background-color: red;
-  width: 98%;
+  background-color: green;
   margin: auto;
 }
-
-.carousel_wrapper {
-  align-items: baseline;
-}
-.import-posts {
-  color: white;
-  text-align: center;
-  min-height: 530px;
-  max-width: 300px;
-  background-color: darkolivegreen;
-  border: solid 2px black;
-  margin: auto;
-  padding: 0px 5px 0px 5px;
-  border-radius: 15px;
-  }
-
-.import-posts img {
-  margin: 15px auto 0 auto;
-  max-width: 500px;
-  height: 100%;
-  border-radius: 15px;
-}
-
 
 
 
@@ -355,6 +331,91 @@ footer {
   background-color: #032416;
   border-top: solid black 1px;
 }
+
+
+/* slider */
+
+.company {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+
+
+.company-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  min-width: 350px;
+}
+
+.company-container::-webkit-scrollbar {
+  display: none;
+}
+
+.company-card {
+  flex: 0 0 auto;
+  margin-right: 40px;
+  max-width: 400px;
+  padding: 20px;
+  border: solid red;
+  text-align: center;
+}
+
+.company-card a {
+  font-size: 1.5rem;
+
+}
+
+
+.company-image {
+  position:relative ;
+  width: 100%;
+  overflow: hidden;
+}
+
+.company-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, black 100%);
+  cursor: pointer;
+  padding: 0px 16px 0px 120px;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.3;
+}
+
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
 
 
 @media (min-width: 1800px) {

@@ -3,7 +3,7 @@ const url = "https://exam-one.eltprod.no/wp-json/wp/v2/posts?_embed";
 const posts = document.querySelector(".carousel");
 
 
-async function JacketsApiFunction() {
+async function postRestApi() {
   try{const response = await fetch(url);
     const results = await response.json();
 
@@ -11,16 +11,19 @@ async function JacketsApiFunction() {
     console.log(results)
     
     for(let i = 0; i < results.length; i++) {
-      if (i === 4) { break; }
+      if (i === 9) { break; }
       const pictures = results[i]._embedded['wp:featuredmedia'][0].source_url;
       const title = results[i].title.rendered;
       const paragraph = results[i].excerpt.rendered;
       console.log(pictures);
-      posts.innerHTML += `<div class="import-posts">
-                                <img src="${pictures}">
-                                <h1>${title}</h1>
-                                ${paragraph}
-                                <a href="" class="button_carousel">Read more</a>
+      posts.innerHTML += `
+                            <div class="company-card">
+                             <div class="product-image">
+                             <img src="${pictures}" class="product-thumb" alt="fortum logo">
+                            </div>
+                            ${paragraph}
+                            <a href="" class="button_carousel">Read more</a>
+                          </div>
                                   `;
                                   
     }
@@ -32,4 +35,20 @@ async function JacketsApiFunction() {
 
 }
 
-JacketsApiFunction()
+postRestApi()
+
+const productContainers = document.querySelectorAll(".company-container");
+const nxtBtn = document.querySelectorAll(".nxt-btn");
+const preBtn = document.querySelectorAll(".pre-btn");
+
+productContainers.forEach((item, i) => {
+  let containerDimensions = item.getBoundingClientRect();
+  let containerWidth = containerDimensions.width;
+
+  nxtBtn[i].addEventListener('click', () => {
+    item.scrollLeft += containerWidth;
+  })
+  preBtn[i].addEventListener('click', () => {
+    item.scrollLeft -= containerWidth;
+  })
+})
