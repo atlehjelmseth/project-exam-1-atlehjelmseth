@@ -453,7 +453,7 @@ footer {
 
 .text-button-front {
   position: relative;
-  padding-top: 128px;
+  padding-top: 40px;
   margin: auto;
   left: auto;
   top: auto;
@@ -470,7 +470,10 @@ footer {
 }
 
 .nav_top_front {
+  max-height: none;
   height: 100px;
+  position: 0;
+
 }
 
 .nav_top_front li {
@@ -483,6 +486,10 @@ footer {
 
 .button_front {
   margin: 20px auto 40px auto;
+}
+
+.company-card {
+  max-width: 250px;
 }
 
 }
