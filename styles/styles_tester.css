@@ -207,7 +207,7 @@ nav li {
 
 .latest_posts {
   text-align: center;
-  background-color: rgba(7, 48, 21, 0.5);
+  background-color: #09301f;
   width: 100%;
   margin: auto;
   padding: 1px 0 0 0;
@@ -338,7 +338,7 @@ footer {
   text-align: center;
   color: white;
   padding: 20px 0px 20px 0px;
-  background-color: #032416;
+  background-color: #09301f;
   border-top: solid black 1px;
 }
 
@@ -374,7 +374,7 @@ footer {
   max-width: 400px;
   padding: 20px;
   text-align: center;
-  background-color: #032416;
+  background-color: #09301f;
   border: solid 2px black;
   border-radius: 15px;
 }
@@ -384,12 +384,10 @@ footer {
   text-align: left;
 }
 
-
-.company-image {
-  position:relative ;
-  width: 100%;
-  overflow: hidden;
+.company-card img {
+  border-radius: 15px;
 }
+
 
 .company-thumb {
   width: 100%;
