@@ -30,7 +30,7 @@ img {
 }
 
 main {
-  background-color: black;
+  background-color: #2b6406;
   padding-bottom: 20px;
 }
 
@@ -94,20 +94,6 @@ nav li {
   padding: 10px 30px 10px 30px;
 
 }
-
-
-.nav_bottom_front {
-  text-align: center;
-  background-color: rgba(7, 48, 21, 0.5);
-  width: 100%;
-  margin: auto;
-  border-bottom: solid 1px black;
-  padding: 1px 0 0 0;
-  position: relative;
-  top: -70px;
-}
-
-
 
  ul {
   display: flex;
@@ -213,32 +199,56 @@ nav li {
   text-shadow: 1px 1px 20px rgb(3, 65, 22);
 }
 
-.text-button-front a {
-  color: white;
-
-}
 
 .button_front:hover {
-  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  box-shadow: 0px 1px 10px rgb(255, 255, 255);
 }
 
-/* home page carousel */
+
 .latest_posts {
+  text-align: center;
+  background-color: rgba(7, 48, 21, 0.5);
+  width: 100%;
+  margin: auto;
+  padding: 1px 0 0 0;
+}
+
+.latest_posts p {
   color: white;
   font-size: 2.2rem;
   text-transform: uppercase;
-  margin: 15px auto 15px auto;
+  margin: auto;
+  padding: 15px 0 15px 0;
+  outline: 2px solid  black;
+  z-index: 7;
 }
 
+
+/* home page carousel */
 
 .carousel {
  display: flex;
   flex-direction: row;
-  background-color: green;
   margin: auto;
 }
 
+.button_carousel {
+  background-color: #53CC00;
+  padding: 10px;
+  max-width: 150px;
+  position: relative;
+  left: 30%;
+  border-radius: 10px;
+  border: solid 2px black;
+  font-family: "turtles";
+  font-size: 1.2rem;
+  color: black;
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
 
+.button_carousel:hover {
+  box-shadow: 0px 1px 10px rgb(255, 255, 255);
+}
 
 
 /* head */
@@ -339,6 +349,7 @@ footer {
   position: relative;
   overflow: hidden;
   padding: 20px;
+  margin: 20px 0 20px 0;
 }
 
 
@@ -359,17 +370,18 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   flex: 0 0 auto;
-  margin-right: 40px;
+  margin: 0 20px 0 20px;
   max-width: 400px;
   padding: 20px;
-  border: solid red;
   text-align: center;
-
+  background-color: #032416;
+  border: solid 2px black;
+  border-radius: 15px;
 }
 
-.company-card a {
-  font-size: 1.5rem;
-
+.company-card p {
+  color: white;
+  text-align: left;
 }
 
 
@@ -394,9 +406,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, black 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #2b6406 100%);
   cursor: pointer;
-  padding: 0px 16px 0px 120px;
+  padding: 0px 20px 0px 20px;
 }
 
 .pre-btn {
@@ -411,7 +423,8 @@ footer {
 
 .pre-btn img,
 .nxt-btn img {
-  opacity: 0.3;
+  opacity: 0.7;
+  width: 15px;
 }
 
 
