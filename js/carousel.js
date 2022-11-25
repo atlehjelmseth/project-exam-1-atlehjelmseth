@@ -1,19 +1,6 @@
 const url = "https://exam-one.eltprod.no/wp-json/wp/v2/posts?_embed";
-const urlDetails = "https://exam-one.eltprod.no/wp-json/wp/v2/posts";
-
-
 const posts = document.querySelector(".carousel");
 
-
-const queryString = document.location.search;
-const params = new URLSearchParams(queryString);
-const id = params.get("id");
-
-console.log(id);
-
-const urlPost = url + "/" + id;
-
-console.log(urlPost)
 
 async function postRestApi() {
   try{const response = await fetch(url);
@@ -22,18 +9,22 @@ async function postRestApi() {
     posts.innerHTML = "";
     console.log(results)
     
+    
     for(let i = 0; i < results.length; i++) {
       if (i === 9) { break; }
       const pictures = results[i]._embedded['wp:featuredmedia'][0].source_url;
       const title = results[i].title.rendered;
       const paragraph = results[i].excerpt.rendered;
+      const id = results[i].id;
+
+      console.log(id)
       posts.innerHTML += `
                             <div class="company-card">
                              <div class="product-image">
                              <img src="${pictures}" class="product-thumb" alt="fortum logo">
                             </div>
                             ${paragraph}
-                            <a href="" class="button_carousel">Read more</a>
+                            <a href="blogpost.html?id=${id}" class="button_carousel">Read more</a>
                           </div>
                                   `;
                                   
@@ -63,3 +54,6 @@ productContainers.forEach((item, i) => {
     item.scrollLeft -= containerWidth;
   })
 })
+
+
+// blogpost.html?id=
