@@ -340,6 +340,7 @@ footer {
   padding: 20px 0px 20px 0px;
   background-color: #09301f;
   border-top: solid black 1px;
+  font-size: 1.5rem;
 }
 
 
@@ -381,7 +382,7 @@ footer {
 
 .company-card p {
   color: white;
-  text-align: left;
+  font-size: 1.5rem;
 }
 
 .company-card img {
@@ -441,4 +442,47 @@ footer {
   .eye_right {
     border: 81px solid blue;
   }
+}
+
+
+
+@media (max-width: 800px) {
+.background-top {
+  display: none;
+}
+
+.text-button-front {
+  position: relative;
+  padding-top: 128px;
+  margin: auto;
+  left: auto;
+  top: auto;
+}
+
+.front_text_second {
+  font-size: 21px;
+  margin: 0 10px 0 10px;
+}
+
+.front_text_third {
+  font-size: 80px;
+  margin-top: 10px;
+}
+
+.nav_top_front {
+  height: 100px;
+}
+
+.nav_top_front li {
+  display: none;
+}
+
+.background-front {
+  min-height: 300px;
+}
+
+.button_front {
+  margin: 20px auto 40px auto;
+}
+
 }

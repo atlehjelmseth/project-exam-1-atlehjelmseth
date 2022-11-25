@@ -7,7 +7,6 @@ async function postRestApi() {
     const results = await response.json();
 
     posts.innerHTML = "";
-    console.log(results)
     
     
     for(let i = 0; i < results.length; i++) {
@@ -17,13 +16,12 @@ async function postRestApi() {
       const paragraph = results[i].excerpt.rendered;
       const id = results[i].id;
 
-      console.log(id)
       posts.innerHTML += `
                             <div class="company-card">
                              <div class="product-image">
                              <img src="${pictures}" class="product-thumb" alt="fortum logo">
                             </div>
-                            ${paragraph}
+                            <p>${title}</p>
                             <a href="blogpost.html?id=${id}" class="button_carousel">Read more</a>
                           </div>
                                   `;
@@ -55,5 +53,3 @@ productContainers.forEach((item, i) => {
   })
 })
 
-
-// blogpost.html?id=
