@@ -129,6 +129,7 @@ nav li {
 .active {
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
   text-decoration:line-through;
+  border-bottom: solid 3px #53CC00;
 }
 
 /* home page */
@@ -292,6 +293,101 @@ nav li {
   box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
 }
 
+.raphael_eye_left {
+  width: 24vw;
+  height: 12vw;
+  max-width: 300px;
+  max-height: 145px;
+  background-color: white;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 4.5vw solid red;
+  transform: rotate(2deg);
+  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+}
+
+.raphael_eye_right {
+  width: 24vw;
+  height: 12vw;
+  max-width: 300px;
+  max-height: 145px;
+  background-color: white;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 4.5vw solid red;
+  transform: rotate(-2deg);
+  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+}
+
+.michelangelo_eye_left {
+  width: 24vw;
+  height: 12vw;
+  max-width: 300px;
+  max-height: 145px;
+  background-color: white;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 4.5vw solid orange;
+  transform: rotate(2deg);
+  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+}
+
+.michelangelo_eye_right {
+  width: 24vw;
+  height: 12vw;
+  max-width: 300px;
+  max-height: 145px;
+  background-color: white;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 4.5vw solid orange;
+  transform: rotate(-2deg);
+  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+}
+
+.donatello_eye_left {
+  width: 24vw;
+  height: 12vw;
+  max-width: 300px;
+  max-height: 145px;
+  background-color: white;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 4.5vw solid purple;
+  transform: rotate(2deg);
+  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+}
+
+.donatello_eye_right {
+  width: 24vw;
+  height: 12vw;
+  max-width: 300px;
+  max-height: 145px;
+  background-color: white;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 4.5vw solid purple;
+  transform: rotate(-2deg);
+  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+}
 
 .eyeball {
   width: 40px;
@@ -331,6 +427,38 @@ nav li {
   border: solid black 2px;
 }
 
+.raphael_bandana {
+  height: 200px;
+  background-color: red;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  top: 200px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  border: solid black 2px;
+}
+
+.michelangelo_bandana {
+  height: 200px;
+  background-color: orange;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  top: 200px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  border: solid black 2px;
+}
+
+.donatello_bandana {
+  height: 200px;
+  background-color: purple;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  top: 200px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  border: solid black 2px;
+}
 
 /* footer */
 
@@ -436,11 +564,11 @@ footer {
 
 @media (min-width: 1800px) {
   .eye_left {
-    border: 81px solid blue;
+    border: 81px;
   }
 
   .eye_right {
-    border: 81px solid blue;
+    border: 81px;
   }
 }
 
