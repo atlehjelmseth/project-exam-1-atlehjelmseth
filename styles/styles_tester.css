@@ -484,8 +484,16 @@ footer {
   min-height: 300px;
 }
 
+.latest_posts p {
+  font-size: 1.5rem;
+}
+
 .button_front {
   margin: 20px auto 40px auto;
+}
+
+.button_carousel {
+  left: 20%;
 }
 
 .company-card {
