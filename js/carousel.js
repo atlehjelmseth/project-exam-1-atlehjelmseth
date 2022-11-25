@@ -1,7 +1,19 @@
 const url = "https://exam-one.eltprod.no/wp-json/wp/v2/posts?_embed";
+const urlDetails = "https://exam-one.eltprod.no/wp-json/wp/v2/posts";
+
 
 const posts = document.querySelector(".carousel");
 
+
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const id = params.get("id");
+
+console.log(id);
+
+const urlPost = url + "/" + id;
+
+console.log(urlPost)
 
 async function postRestApi() {
   try{const response = await fetch(url);
@@ -15,7 +27,6 @@ async function postRestApi() {
       const pictures = results[i]._embedded['wp:featuredmedia'][0].source_url;
       const title = results[i].title.rendered;
       const paragraph = results[i].excerpt.rendered;
-      console.log(pictures);
       posts.innerHTML += `
                             <div class="company-card">
                              <div class="product-image">
