@@ -453,7 +453,7 @@ footer {
 
 .text-button-front {
   position: relative;
-  padding-top: 40px;
+  padding-top: 120px;
   margin: auto;
   left: auto;
   top: auto;
@@ -481,7 +481,7 @@ footer {
 }
 
 .background-front {
-  min-height: 300px;
+  min-height: 500px;
 }
 
 .latest_posts p {
