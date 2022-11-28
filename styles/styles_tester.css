@@ -91,7 +91,7 @@ header {
 
 nav li {
   display: inline-block;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 40px 10px 40px;
 
 }
 
@@ -101,11 +101,6 @@ nav li {
   padding: 0;
 }
 
- li {
-  display: inline-block;
-  position: relative;
-  margin: 0 10px;
-}
 
  li:after {
   content: "";
@@ -625,7 +620,7 @@ footer {
 }
 
 .company-card {
-  max-width: 270px;
+  width: 80%;
 }
 
 }
