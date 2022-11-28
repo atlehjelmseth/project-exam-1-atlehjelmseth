@@ -26,9 +26,9 @@ async function blogApi() {
                             <p class="blog-title">${title}</p>
                             <p>${paragraph}</p>
                             <a href="blogpost.html?id=${id}" class="button_blog">Read more</a>
-                          </div>
-                                  `;
-                                  
+                            </div>
+
+                                  `;               
     }
 
   }catch (error) {
