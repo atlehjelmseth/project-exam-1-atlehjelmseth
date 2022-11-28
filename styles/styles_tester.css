@@ -543,6 +543,7 @@ header {
 
 .background-blog {
   padding-top: 100px;
+
 }
 
 .blog  {
@@ -594,13 +595,10 @@ header {
 .details-container {
   display: flex;
   flex-direction: column;
-  max-width: 700px;
   margin: 50px auto 50px auto;
-  background-color: #09301f;
   text-align: center;
   padding: 20px;
   color: white;
-  border: solid 2px black;
 }
 
 /* footer */
@@ -643,7 +641,7 @@ footer {
   justify-content: space-between;
   flex: 0 0 auto;
   margin: 0 20px 0 20px;
-  min-width: 77%;
+  width: 77%;
   padding: 20px;
   text-align: center;
   background-color: #09301f;
@@ -780,7 +778,7 @@ li {
 
 
 .company-card {
-  min-width: 400px;
+  width: 400px;
 }
 
 ul {

@@ -26,13 +26,12 @@ async function jacketSpecs() {
       spesifications.innerHTML = "";
 
       spesifications.innerHTML += `<div class="details-container">
-      <p class="blog-title">${title}</p>
-      <div class="product-image">
-      <img src="${pictures}" class="product-thumb" alt="fortum logo">
-     </div>
-
-     <p>${paragraph}</p>
-   </div>
+                                    <p class="blog-title">${title}</p>
+                                      <div class="product-image">
+                                        <img src="${pictures}" class="product-thumb" alt="fortum logo">
+                                      </div>
+                                    <p>${paragraph}</p>
+                                  </div>
                                   `;
 
 
