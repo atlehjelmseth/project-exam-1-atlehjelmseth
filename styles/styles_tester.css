@@ -114,10 +114,6 @@ header {
   
 }
 
- li:hover:after {
-  width: 45%;
-}
-
 .nav_img {
   width: 180px;
 margin: 0 20px 0 20px;
@@ -699,6 +695,11 @@ li {
 ul {
   display: flex;
 }
+
+li:hover:after {
+  width: 45%;
+}
+
 
 }
 
