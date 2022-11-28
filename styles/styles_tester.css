@@ -15,7 +15,7 @@ body {
   font-size: 1rem;
   background-color: #041b0d;
   max-width: 1500px;
-  border:black solid 3px;
+
 }
 
 a {
@@ -79,9 +79,6 @@ header {
   background-color: #09301f;
   z-index: 1;
   margin: auto;
-  border-top: solid black 1px;
-  border-bottom: solid black 1px;
-
 }
 
 .nav_top_front ul {
@@ -281,7 +278,6 @@ margin: 0 20px 0 20px;
   text-transform: uppercase;
   margin: auto;
   padding: 15px 0 15px 0;
-  outline: 2px solid  black;
   z-index: 7;
 }
 
@@ -652,6 +648,7 @@ footer {
   justify-content: center;
   position: relative;
   background-color: rgba(7, 48, 21, 0.363);
+  border: solid black 1px;
 }
 
 .nav-menu {
