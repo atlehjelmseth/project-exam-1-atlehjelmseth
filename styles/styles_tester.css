@@ -717,12 +717,33 @@ footer {
 
 
 @media (min-width: 1800px) {
+
   .eye_left {
-    border: 81px;
+    border: 81px solid blue;
+  }
+  .eye_right {
+    border: 81px solid blue;
+  }
+  .raphael_eye_left {
+    border: 81px solid red;
   }
 
-  .eye_right {
-    border: 81px;
+  .raphael_eye_right {
+    border: 81px solid red;
+  }
+  .michelangelo_eye_left {
+    border: 81px solid orange;
+  }
+
+  .michelangelo_eye_right {
+    border: 81px solid orange;
+  }
+  .donatello_eye_left {
+    border: 81px solid purple;
+  }
+
+  .donatello_eye_right {
+    border: 81px solid purple;
   }
 }
 
