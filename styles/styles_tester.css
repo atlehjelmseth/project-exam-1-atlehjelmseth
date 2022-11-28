@@ -12,10 +12,13 @@
 body {
   margin: auto;
   font-family: "Garamond";
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-color: #041b0d;
   max-width: 1500px;
-
+  animation-name: smooth;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 a {
@@ -32,6 +35,20 @@ img {
 main {
   background-color: #2b6406;
   padding-bottom: 20px;
+}
+
+/* Animations - Global */
+
+@keyframes smooth {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* header */ 
@@ -111,10 +128,24 @@ header {
   
 }
 
-.nav_img {
-  width: 180px;
-margin: 0 20px 0 20px;
+.home_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
+.home_header p {
+  font-family: "turtles";
+  margin-left: 10px;
+}
+
+.fa-user-ninja {
+  color:#76df31;
+  font-size: 28px;
+  margin-left: 24px;
+}
+
+
 
 .active_site {
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
@@ -166,7 +197,6 @@ margin: 0 20px 0 20px;
   background-color: #09301f;
   width: 100%;
   height: 100%;
-  margin-top: 49px;
   transition: 0.3s;
 }
 
@@ -509,6 +539,70 @@ margin: 0 20px 0 20px;
   border: solid black 2px;
 }
 
+/* Blog page */
+
+.background-blog {
+  padding-top: 100px;
+}
+
+.blog  {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 50px auto 50px auto;
+  background-color: #09301f;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  border: solid 2px black;
+}
+
+.blog-title {
+  font-family: "turtles";
+  font-size: 2.5rem;
+  text-shadow: 0px 5px 15px rgb(0, 0, 0);
+}
+
+.button_blog {
+  background-color: #53CC00;
+  padding: 10px;
+  max-width: 150px;
+  border-radius: 10px;
+  border: solid 2px black;
+  font-family: "turtles";
+  font-size: 1.2rem;
+  color: black;
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  margin: auto;
+
+}
+
+/* Spesific blogpost */
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 50px auto 50px auto;
+  background-color: #09301f;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  border: solid 2px black;
+}
+
 /* footer */
 
 footer {
@@ -633,7 +727,7 @@ footer {
   display: none;
 }
 
-.nav_img {
+.home_header {
   display: none;
 }
 

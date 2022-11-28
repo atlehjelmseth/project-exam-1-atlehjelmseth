@@ -9,6 +9,7 @@
   <title>Home page</title>
   <link href="styles/styles_tester.css" rel="stylesheet">
   <link href="styles/carousel.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1fe0dacb52.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -27,7 +28,9 @@
       </div>
     </div>
     <nav class="nav_top_front">
-      <a href="index.html"><img src="/images/exam_logo.png" class="nav_img"></a>
+      <a href="index.html" class="home_header"><i class="fas fa-user-ninja"></i>
+        <p>Cowabunga</p>
+      </a>
       <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -42,34 +45,13 @@
     </nav>
   </header>
   <main>
-    <div class="background-front">
-      <div class="text-button-front">
-        <p class="front_text_first">the awsome blog of</p>
-        <p class="front_text_second">teenage mutant ninja</p>
-        <p class="front_text_third">turtles</p>
-        <a href="blog.html" class="button_front">Enter</a>
-      </div>
-    </div>
-    <div class="latest_posts">
-      <p>Latest posts</p>
-    </div>
-    <div class="carousel_wrapper">
-      <div class="company">
-        <button class="pre-btn">
-          <img src="/images/arrow.png" alt="pil forrige">
-        </button>
-        <button class="nxt-btn">
-          <img src="/images/arrow.png" alt="pil neste">
-        </button>
-        <div class="carousel company-container">
-          <p>loading</p>
-        </div>
-      </div>
+    <div class="background-blog">
+      <div class="blog"></div>
     </div>
   </main>
   <script src="/js/script.js"></script>
   <script src="/js/eyes.js"></script>
-  <script src="/js/carousel.js"></script>
+  <script src="/js/blog.js"></script>
   <footer>Atle R. Andersen-Hjelmseth &copy; 2023</footer>
 </body>
 
