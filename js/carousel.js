@@ -11,7 +11,7 @@ async function postRestApi() {
     
     for(let i = 0; i < results.length; i++) {
       if (i === 9) { break; }
-      const pictures = results[i]._embedded['wp:featuredmedia'][0].source_url;
+      const pictures = results[i]._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url;
       const title = results[i].title.rendered;
       const paragraph = results[i].excerpt.rendered;
       const id = results[i].id;

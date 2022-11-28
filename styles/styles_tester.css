@@ -643,7 +643,7 @@ footer {
   justify-content: space-between;
   flex: 0 0 auto;
   margin: 0 20px 0 20px;
-  max-width: 77%;
+  min-width: 77%;
   padding: 20px;
   text-align: center;
   background-color: #09301f;
@@ -780,7 +780,7 @@ li {
 
 
 .company-card {
-  max-width: 400px;
+  min-width: 400px;
 }
 
 ul {
