@@ -87,7 +87,7 @@ header {
 .nav_top_front ul {
   padding: 0px;
   max-width: 1200px;
-  text-align: left;
+  display: flex;
 }
 
 
@@ -98,7 +98,7 @@ header {
 }
 
  li {
-  display: inline-block;
+  display: block;
   position: relative;
   margin: 0 10px;
   padding: 10px 30px 10px 30px;
@@ -165,11 +165,10 @@ margin: 0 20px 0 20px;
   right: -100%;
   top: 55px;
   gap: 0;
-
   width: 300px;
   height: 100%;
   text-align: center;
-
+  transition: 0.1s;
 }
 
 .nav-menu.active {
@@ -661,6 +660,10 @@ footer {
   flex-direction: row;
   right: 0;
   top: 0;
+}
+
+li {
+  display: inline-block;
 }
 
 .text-button-front {
