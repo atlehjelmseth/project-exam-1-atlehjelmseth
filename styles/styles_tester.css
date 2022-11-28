@@ -629,7 +629,7 @@ footer {
   overflow-x: auto;
   scroll-behavior: smooth;
   min-width: 350px;
-  margin: 0 10px 0 0;
+  margin: 0 20px 0 0;
 }
 
 .company-container::-webkit-scrollbar {
