@@ -11,7 +11,7 @@
 }
 body {
   margin: auto;
-  font-family: "Garamond", serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.2rem;
   background-color: #041b0d;
   max-width: 1500px;
