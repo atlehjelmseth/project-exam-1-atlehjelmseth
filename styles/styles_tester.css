@@ -193,7 +193,7 @@ header {
 .nav-menu {
   position: fixed;
   padding-top: 50px;
-  right: -100%;
+  right: -165%;
   top: 55px;
   gap: 0;
   width: 300px;
@@ -822,7 +822,16 @@ ul {
 li:hover:after {
   width: 45%;
 }
-
-
 }
 
+/* Media for home-page text for really small screens */
+
+@media (max-width: 374px) {
+  .front_text_second {
+    font-size: 5vw;
+  }
+
+  .front_text_third {
+    font-size: 20vw;
+  }
+}
