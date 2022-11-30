@@ -824,7 +824,7 @@ li:hover:after {
 }
 }
 
-/* Media for home-page text for really small screens */
+/* Media for home-page text regarding really small screens */
 
 @media (max-width: 374px) {
   .front_text_second {
