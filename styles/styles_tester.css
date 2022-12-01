@@ -589,6 +589,27 @@ header {
 
 }
 
+.button_view_more {
+  display: flex;
+  margin: 0 auto 40px auto;
+  font-family: "turtles";
+  text-transform: uppercase;
+  padding: 15px;
+  background-color:red;
+  color: white;
+  border: solid 1px black;
+  cursor: pointer;
+  box-shadow: 0 5px 35px rgb(0 0 0);
+  text-shadow: 10px 0px 15px rgb(0, 0, 0);
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.search {
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+
 /* Spesific blogpost */
 
 .details {
