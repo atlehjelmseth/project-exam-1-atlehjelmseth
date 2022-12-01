@@ -34,11 +34,6 @@ async function blogApi() {
                             </div>
                                   `;
     }
-
-      
-      
-
-
   }catch (error) {
     posts.innerHTML = "error";
     console.log("error");
