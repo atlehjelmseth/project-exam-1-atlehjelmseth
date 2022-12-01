@@ -1,8 +1,10 @@
-const url = "https://exam-one.eltprod.no/wp-json/wp/v2/posts?_embed";
+const url = "https://exam-one.eltprod.no/wp-json/wp/v2/posts?per_page=100&_embed";
 const url_next = "https://exam-one.eltprod.no/wp-json/wp/v2/posts?page=2&_embed";
 const button = document.querySelector(".button_view_more");
 const posts = document.querySelector(".blog");
+const search = document.querySelector(".search");
 
+/* Fetching blogposts */
 
 async function blogApi() {
   try{const response = await fetch(url);
@@ -12,7 +14,8 @@ async function blogApi() {
 
 
     for(let i = 0; i < results.length; i++) {
-      // if (i === 10) { break; }
+      if (i === 10) { break; }
+
       const pictures = results[i]._embedded['wp:featuredmedia'][0].source_url;
       const title = results[i].title.rendered;
       const paragraph = results[i].excerpt.rendered;
@@ -32,6 +35,10 @@ async function blogApi() {
                                   `;
     }
 
+      
+      
+
+
   }catch (error) {
     posts.innerHTML = "error";
     console.log("error");
@@ -43,9 +50,8 @@ async function blogApi() {
     document.querySelector('.button_view_more').addEventListener("click", function(){
       for(let i = 0; i < results2.length; i++){
 
-        console.log(results2);
         button.style.display = "none";
-        
+
         const pictures2 = results2[i]._embedded['wp:featuredmedia'][0].source_url;
         const title2 = results2[i].title.rendered;
         const paragraph2 = results2[i].excerpt.rendered;
@@ -60,8 +66,11 @@ async function blogApi() {
                             <a href="blogpost.html?id=${id2}" class="button_blog">Read more</a>
                             </div>
                                    `;
+
       }
     })
+
+
   }catch {
     console.log("error");
   }
@@ -70,5 +79,46 @@ async function blogApi() {
 
 blogApi()
 
+/* Search Bar */
+
+search.onkeyup = async function (event) {
+  try{const response = await fetch(url);
+      const results = await response.json();
+
+      const searchValue = event.target.value.toLowerCase();
+
+      const filteredBlog = results.filter(function (blog) {
+          if (blog.title.rendered.toLowerCase().includes(searchValue)) {
+              return true;
+          }
+      });
+
+      console.log(filteredBlog);
+      button.style.display = "none";
+
+      posts.innerHTML = "";
+
+      for(let i = 0; i < filteredBlog.length; i++){
+      const picturesFiltered = filteredBlog[i]._embedded['wp:featuredmedia'][0].source_url;
+      const titleFiltered = filteredBlog[i].title.rendered;
+      const paragraphFiltered = filteredBlog[i].excerpt.rendered;
+      const idFiltered = filteredBlog[i].id;
 
 
+      posts.innerHTML += `
+                            <div class="blog-container">
+                             <div class="product-image">
+                             <img src="${picturesFiltered}" class="product-thumb" alt="fortum logo">
+                            </div>
+                            <p class="blog-title">${titleFiltered}</p>
+                            <p>${paragraphFiltered}</p>
+                            <a href="blogpost.html?id=${idFiltered}" class="button_blog">Read more</a>
+                            </div>
+                                   `;
+                                  }
+
+  }catch{
+    console.log("error");
+  }
+
+}
