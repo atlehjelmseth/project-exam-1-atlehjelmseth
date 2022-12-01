@@ -30,7 +30,7 @@ async function jacketSpecs() {
                                   <button onclick="history.back()"><< Go Back</button>
                                     <h1>${title}</h1>
                                       <div class="product-image">
-                                        <img src="${pictures}" class="product-thumb" alt="fortum logo">
+                                        <img src="${pictures}" class="product-thumb" alt="kommer">
                                       </div>
                                     <p>${paragraph}</p>
                                   </div>

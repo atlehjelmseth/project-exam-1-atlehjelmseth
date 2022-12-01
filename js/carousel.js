@@ -19,7 +19,7 @@ async function postRestApi() {
       posts.innerHTML += `
                             <div class="company-card">
                              <div class="product-image">
-                             <img src="${pictures}" class="product-thumb" alt="fortum logo">
+                             <img src="${pictures}" class="product-thumb" alt="kommer">
                             </div>
                             <p>${title}</p>
                             <a href="blogpost.html?id=${id}" class="button_carousel">Read more</a>

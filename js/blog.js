@@ -26,7 +26,7 @@ async function blogApi() {
       posts.innerHTML += `
                             <div class="blog-container">
                              <div class="product-image">
-                             <img src="${pictures}" class="product-thumb" alt="fortum logo">
+                             <img src="${pictures}" class="product-thumb" alt="kommer">
                             </div>
                             <p class="blog-title">${title}</p>
                             <p>${paragraph}</p>
@@ -54,7 +54,7 @@ async function blogApi() {
         posts.innerHTML += `
                             <div class="blog-container">
                              <div class="product-image">
-                             <img src="${pictures2}" class="product-thumb" alt="fortum logo">
+                             <img src="${pictures2}" class="product-thumb" alt="kommer">
                             </div>
                             <p class="blog-title">${title2}</p>
                             <p>${paragraph2}</p>
@@ -103,7 +103,7 @@ search.onkeyup = async function (event) {
       posts.innerHTML += `
                             <div class="blog-container">
                              <div class="product-image">
-                             <img src="${picturesFiltered}" class="product-thumb" alt="fortum logo">
+                             <img src="${picturesFiltered}" class="product-thumb" alt="kommer">
                             </div>
                             <p class="blog-title">${titleFiltered}</p>
                             <p>${paragraphFiltered}</p>
