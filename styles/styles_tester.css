@@ -60,6 +60,27 @@ h1 {
   }
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 0.9em;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b6406;
+  border: 2px solid #76df31;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #43960c;
+}
+
 /* header */ 
 
 header {
@@ -631,9 +652,27 @@ input {
   display: flex;
   flex-direction: column;
   margin: auto;
-  text-align: center;
   padding: 20px;
   color: white;
+}
+
+.details-container button {
+  display: block;
+  font-family: "turtles";
+  max-width: 150px;
+  margin: 20px 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: solid 1px black;
+  cursor: pointer;
+  box-shadow: 0 5px 35px rgb(0 0 0);
+  text-shadow: 10px 0px 15px rgb(0 0 0);
+  border-radius: 10px;
+  font-size: 1rem;
+
 }
 
 .details-container h1 {
