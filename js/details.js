@@ -21,12 +21,11 @@ async function jacketSpecs() {
       const pictures = resultsSpec._embedded['wp:featuredmedia'][0].source_url;
       const title = resultsSpec.title.rendered;
       const paragraph = resultsSpec.excerpt.rendered;
-      const author = resultsSpec.author;
       const id = resultsSpec.id;
 
       spesifications.innerHTML = "";
 
-      spesifications.innerHTML += `<p class="author">Written by: ${author}</p>
+      spesifications.innerHTML += `
                                   <div class="details-container">
                                     <h1>${title}</h1>
                                       <div class="product-image">

@@ -27,9 +27,9 @@ async function blogApi() {
                             <p>${paragraph}</p>
                             <a href="blogpost.html?id=${id}" class="button_blog">Read more</a>
                             </div>
-
                                   `;               
     }
+    posts.innerHTML += '<a href="#" class="button_view_more">view more posts</a>';
 
   }catch (error) {
     posts.innerHTML = "error";
@@ -39,5 +39,6 @@ async function blogApi() {
 }
 
 blogApi()
+
 
 
