@@ -12,7 +12,6 @@ async function blogApi() {
 
     posts.innerHTML = "";
 
-
     for(let i = 0; i < results.length; i++) {
       if (i === 10) { break; }
 
@@ -83,7 +82,7 @@ search.onkeyup = async function (event) {
       const searchValue = event.target.value.toLowerCase();
 
       const filteredBlog = results.filter(function (blog) {
-          if (blog.title.rendered.toLowerCase().includes(searchValue)) {
+          if (blog.title.rendered.toLowerCase().includes(searchValue) || blog.excerpt.rendered.toLowerCase().includes(searchValue)) {
               return true;
           }
       });

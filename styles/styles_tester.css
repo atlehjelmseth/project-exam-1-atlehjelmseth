@@ -588,11 +588,16 @@ header {
 input {
   display: flex;
   margin: auto;
-  height: 50px;
+  height: 20px;
   min-width: 250px;
   opacity: 0.8;
   border: solid 2px black;
   padding: 15px;
+}
+
+input::placeholder {
+  font-size: 1rem;
+
 }
 
 
