@@ -608,7 +608,9 @@ input {
   color: white;
   border: solid 2px black;
   box-shadow: 0 5px 15px rgb(0 0 0);
+  transition: 0.2s;
 }
+
 
 
 .button_blog {
@@ -622,7 +624,10 @@ input {
   color: black;
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
   margin: auto;
+}
 
+.button_blog:hover {
+  box-shadow: 0 0px 10px rgb(255, 255, 255);
 }
 
 .button_view_more {
@@ -640,6 +645,11 @@ input {
   border-radius: 10px;
   font-size: 1.5rem;
 }
+
+.button_view_more:hover {
+  box-shadow: 0 0px 10px rgb(255, 255, 255);
+}
+
 
 /* Spesific blogpost */
 
@@ -679,6 +689,10 @@ input {
 
 .details-container h1 {
   padding: 0;
+}
+
+.details-container img {
+  cursor: pointer;
 }
 
 .author {
