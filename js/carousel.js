@@ -37,6 +37,8 @@ async function postRestApi() {
 
 postRestApi()
 
+/* Slider */
+
 const productContainers = document.querySelectorAll(".company-container");
 const nxtBtn = document.querySelectorAll(".nxt-btn");
 const preBtn = document.querySelectorAll(".pre-btn");

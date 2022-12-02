@@ -1,7 +1,6 @@
 const urlDetails = "https://exam-one.eltprod.no/wp-json/wp/v2/posts";
-
+const modal = document.querySelector(".modal");
 const spesifications = document.querySelector(".details");
-
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -13,7 +12,7 @@ const specs = urlDetails + "/" + id + "?_embed";
 
 console.log(specs);
 
-async function jacketSpecs() {
+async function blogSpecs() {
   try {const response = await fetch(specs);
        const resultsSpec = await response.json();
 
@@ -35,13 +34,34 @@ async function jacketSpecs() {
                                     <p>${paragraph}</p>
                                   </div>
                                   `;
+      modal.innerHTML += `<div class="close"><i class="fas fa-times"></i></div>
+      <div class="modalContent">
+        <img src="${pictures}" class="modalImg">
+        <p>${title}</p>
+      </div>`
+      
+                        ;
 
-
+                        const blogImages = document.querySelector(".product-image")
+                        blogImages.addEventListener('click', function(){
+                          modal.style.display = "flex";
+                        });
+                        
+                        modal.addEventListener('click', function(){
+                          modal.style.display = "none";
+                        });
       }catch (error) {
         spesifications.innerHTML = "Unable to connect to the API";
     }
    }
 
-   jacketSpecs()
+blogSpecs()
 
-   
+
+
+// modalFunction()
+
+
+// spesifications.ready(function() {
+//   console.log('Document is ready.') 
+// })

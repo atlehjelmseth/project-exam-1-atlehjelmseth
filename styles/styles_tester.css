@@ -607,6 +607,7 @@ input {
   padding: 20px;
   color: white;
   border: solid 2px black;
+  box-shadow: 0 5px 15px rgb(0 0 0);
 }
 
 
@@ -650,6 +651,7 @@ input {
 
 .details-container {
   display: flex;
+  max-width: 700px;
   flex-direction: column;
   margin: auto;
   padding: 20px;
@@ -682,6 +684,40 @@ input {
 .author {
   color: white;
   padding: 0px 0px 0px 20px;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  z-index: 2;
+  overflow: auto;
+  flex-direction: row;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalImg {
+  width: 75%;
+}
+
+.close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 /* footer */
