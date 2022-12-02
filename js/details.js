@@ -5,6 +5,7 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
+
 console.log(id);
 
 
@@ -24,32 +25,31 @@ async function blogSpecs() {
 
       spesifications.innerHTML = "";
 
-      spesifications.innerHTML += `
-                                  <div class="details-container">
-                                  <button onclick="history.back()"><< Go Back</button>
+      spesifications.innerHTML += `<div class="details-container">
+                                    <button onclick="history.back()"><< Go Back</button>
                                     <h1>${title}</h1>
-                                      <div class="product-image">
-                                        <img src="${pictures}" class="product-thumb" alt="kommer">
-                                      </div>
+                                    <div class="product-image">
+                                      <img src="${pictures}" class="product-thumb" alt="kommer">
+                                    </div>
                                     <p>${paragraph}</p>
                                   </div>
                                   `;
       modal.innerHTML += `<div class="close"><i class="fas fa-times"></i></div>
-      <div class="modalContent">
-        <img src="${pictures}" class="modalImg">
-        <p>${title}</p>
-      </div>`
-      
-                        ;
+                          <div class="modalContent">
+                            <img src="${pictures}" class="modalImg">
+                            <p>${title}</p>
+                          </div>`
+                          ;
 
-                        const blogImages = document.querySelector(".product-image")
+                        const blogImages = document.querySelector(".product-image");
+
+                        
                         blogImages.addEventListener('click', function(){
                           modal.style.display = "flex";
                         });
                         
-                        modal.addEventListener('click', function(){
-                          modal.style.display = "none";
-                        });
+
+                        
       }catch (error) {
         spesifications.innerHTML = "Unable to connect to the API";
     }
@@ -57,11 +57,9 @@ async function blogSpecs() {
 
 blogSpecs()
 
+const background = document.querySelector(".details-blog");
 
-
-// modalFunction()
-
-
-// spesifications.ready(function() {
-//   console.log('Document is ready.') 
-// })
+modal.addEventListener('click', function(){
+  if (event.target.closest(".modalImg")) return
+  modal.style.display = "none";
+});

@@ -700,6 +700,11 @@ input {
   flex-direction: row;
 }
 
+.modal_hidden {
+  display: none;
+}
+
+
 .modalContent {
   display: flex;
   flex-direction: column;
