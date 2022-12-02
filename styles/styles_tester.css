@@ -689,7 +689,6 @@ input::placeholder {
   text-shadow: 10px 0px 15px rgb(0 0 0);
   border-radius: 10px;
   font-size: 1rem;
-
 }
 
 .details-container h1 {
@@ -878,7 +877,7 @@ footer {
 
 
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
 
 .background-top {
   display: flex;
