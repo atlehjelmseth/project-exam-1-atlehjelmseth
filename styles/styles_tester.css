@@ -12,7 +12,7 @@
 body {
   margin: auto;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   background-color: #041b0d;
   max-width: 1500px;
   animation-name: smooth;
@@ -607,7 +607,7 @@ input::placeholder {
   flex-direction: column;
   max-width: 700px;
   margin: 50px auto 50px auto;
-  background-color: #5ac1179e;
+  background-color: #5ac117c4;
   text-align: center;
   padding: 20px;
   color: white;
@@ -789,7 +789,7 @@ footer {
   width: 78%;
   padding: 20px;
   text-align: center;
-  background-color: #5ac1179e;
+  background-color: #5ac117c4;
   border: solid 2px black;
   border-radius: 15px;
 }
