@@ -33,7 +33,7 @@ img {
 }
 
 main {
-  background-color: #2b6406;
+  background: radial-gradient(rgba(173, 53, 29, 0.9), rgba(112, 36, 21, 0.9) ), url(/images/wall-2715701_640.jpg);
   padding-bottom: 20px;
 }
 
@@ -607,15 +607,19 @@ input::placeholder {
   flex-direction: column;
   max-width: 700px;
   margin: 50px auto 50px auto;
-  background-color: #09301f;
+  background-color: #5ac1179e;
   text-align: center;
   padding: 20px;
   color: white;
   border: solid 2px black;
   box-shadow: 0 5px 15px rgb(0 0 0);
   transition: 0.2s;
+  border-radius: 10px;
 }
 
+.blog-container p {
+  text-shadow: 0px 5px 5px rgb(0, 0, 0);
+}
 
 
 .button_blog {
@@ -785,7 +789,7 @@ footer {
   width: 78%;
   padding: 20px;
   text-align: center;
-  background-color: #09301f;
+  background-color: #5ac1179e;
   border: solid 2px black;
   border-radius: 15px;
 }
@@ -793,6 +797,7 @@ footer {
 .company-card p {
   color: white;
   font-size: 1.5rem;
+  text-shadow: 0px 5px 5px rgb(0, 0, 0);
 }
 
 .company-card img {
@@ -815,7 +820,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #2b6406 100%);
+  background: 0;
   cursor: pointer;
   padding: 0px 20px 0px 20px;
 }
@@ -894,7 +899,7 @@ footer {
 .nav_top_front {
   justify-content: center;
   position: relative;
-  background-color: rgba(7, 48, 21, 0.363);
+  background-color: rgba(7, 48, 21, 0.9);
   border: solid black 1px;
 }
 
