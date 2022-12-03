@@ -815,7 +815,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #2b6406 100%);
+  background: 0;
   cursor: pointer;
   padding: 0px 20px 0px 20px;
 }
