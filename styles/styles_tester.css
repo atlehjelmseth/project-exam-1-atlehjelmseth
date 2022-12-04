@@ -33,7 +33,8 @@ img {
 }
 
 main {
-  background-color: #2b6406;
+
+  background-image: linear-gradient(0deg, rgba(31, 99, 14, 0.98), rgba(31, 99, 14, 0.98)), url(/images/wall-2715701_640.jpg);
   padding-bottom: 20px;
 }
 
