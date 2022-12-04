@@ -1,6 +1,7 @@
 const urlDetails = "https://exam-one.eltprod.no/wp-json/wp/v2/posts";
 const modal = document.querySelector(".modal");
 const spesifications = document.querySelector(".details");
+const pageTitle = document.querySelector("title");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -22,6 +23,7 @@ async function blogSpecs() {
       const title = resultsSpec.title.rendered;
       const paragraph = resultsSpec.excerpt.rendered;
       const id = resultsSpec.id;
+      
 
       spesifications.innerHTML = "";
 
@@ -34,6 +36,7 @@ async function blogSpecs() {
                                     <p>${paragraph}</p>
                                   </div>
                                   `;
+      pageTitle.innerHTML = `Blog | ${title}`;
       modal.innerHTML += `<div class="close"><i class="fas fa-times"></i></div>
                           <div class="modalContent">
                             <img src="${pictures}" class="modalImg">

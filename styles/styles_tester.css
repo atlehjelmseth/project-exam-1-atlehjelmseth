@@ -15,6 +15,7 @@ body {
   font-size: 1.2rem;
   background-color: #041b0d;
   max-width: 1500px;
+  min-height: 100vh;
   animation-name: smooth;
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
@@ -33,9 +34,10 @@ img {
 }
 
 main {
-
   background-image: linear-gradient(0deg, rgba(31, 99, 14, 0.98), rgba(31, 99, 14, 0.98)), url(/images/wall-2715701_640.jpg);
   padding-bottom: 20px;
+  min-height: 100%;
+  min-height: calc(100vh - 70px);
 }
 
 h1 {
@@ -585,12 +587,11 @@ header {
 }
 
 
-
-input {
+.search {
   display: flex;
   margin: auto;
   height: 20px;
-  min-width: 250px;
+  width: 250px;
   opacity: 0.8;
   border: solid 2px black;
   padding: 15px;
@@ -745,9 +746,78 @@ input::placeholder {
   cursor: pointer;
 }
 
+/* contact page */
+
+.contact-us-content {
+  display: flex;
+  justify-content: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-us img {
+  display: none;
+}
+
+
+input,
+select,
+textarea {
+  display: flex;
+  position: relative;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  margin: 20px 15px 10px 15px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 400px;
+}
+
+
+.formError {
+  display: none;
+  color:red;
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.success {
+  text-align: center;
+  color: green;
+  font-size: 1.5rem;
+  display: none;
+}
+
+#message {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+}
+
+.button_contact {
+  display: flex;
+  justify-content: center;
+  background-color: #53CC00;
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  border: solid 2px black;
+  font-family: "turtles";
+  font-size: 1.2rem;
+  color: black;
+  text-shadow: 0px 0px 5px rgb(255 255 255);
+  margin: 80px auto 0 auto;
+}
+
+
 /* footer */
 
 footer {
+
+  width: 100%;
   text-align: center;
   color: white;
   padding: 20px 0px 20px 0px;
@@ -896,7 +966,7 @@ footer {
 .nav_top_front {
   justify-content: center;
   position: relative;
-  background-color: rgba(7, 48, 21, 0.363);
+  background-color: rgba(7, 48, 21, 0.8);
   border: solid black 1px;
 }
 
@@ -951,6 +1021,12 @@ ul {
 
 li:hover:after {
   width: 45%;
+}
+
+input,
+select,
+textarea {
+  width: 700px;
 }
 }
 

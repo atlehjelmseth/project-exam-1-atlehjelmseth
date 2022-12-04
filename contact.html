@@ -46,12 +46,43 @@
   <main>
     <div class="background-blog">
       <h1>Contact us</h1>
-      <div class="blog"></div>
-    </div>
+      <div class="contact-us-content">
+        <form id="contactForm">
+          <div class="label">
+            <label>
+              <input name="name" id="name" placeholder="* Full name">
+            </label>
+            <div class="formError" id="nameError">Please enter your name, more than 5 characters</div>
+          </div>
+          <div class="label">
+            <label>
+              <input name="email" id="email" placeholder="* Email">
+            </label>
+            <div class="formError" id="emailError">Please enter a valid email-adress</div>
+          </div>
+          <div class="label">
+            <label>
+              <input name="subject" id="subject" placeholder="* Subject">
+            </label>
+            <div class="formError" id="subjectError">
+              Please enter your subject, more than 15 characters
+            </div>
+          </div>
+          <div class="label">
+            <label>
+              <textarea name="message" id="message" placeholder="* Please enter your message"></textarea>
+            </label>
+            <div class="formError" id="messageError">
+              Please enter your message, more than 25 characters
+            </div>
+            <p class="success">Your message is sendt!</p>
+            <button class="button_contact">Send</button>
+          </div>
+      </div>
   </main>
   <script src="/js/script.js"></script>
   <script src="/js/eyes.js"></script>
-  <script src="/js/carousel.js"></script>
+  <script src="/js/contact.js"></script>
   <footer>Atle R. Andersen-Hjelmseth &copy; 2023</footer>
 </body>
 
