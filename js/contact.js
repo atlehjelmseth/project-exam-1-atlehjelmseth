@@ -40,39 +40,27 @@ function validateForm() {
   if(checkLength(fullName.value, 5) === true && validateEmail(email.value) === true && checkLength(subject.value, 15) === true && checkLength(message.value, 25) === true) {
     success.style.display = "block";
     button.style.display = "none";
-
   } 
-
-  const formSubmissionHandler = (event) => {
-    event.preventDefault();
   
-    const formElement = event.target,
-      { action, method } = formElement,
-      body = new FormData(formElement);
-  
-    fetch(action, {
-      method,
-      body
-    })
-      .then((response) => response.json())
-      .then((response) => {
-        // Determine if the submission is not valid
-        if (isFormSubmissionError(response)) {
-          // Handle the case when there are validation errors
-        }
-        // Handle the happy path
-      })
-      .catch((error) => {
-        // Handle the case when there's a problem with the request
-      });
-  };
-  
-  const formElement = document.querySelector("form");
-  
-  formElement.addEventListener("submit", formSubmissionHandler);
-
-
 }
+
+const formSubmissionHandler = (event) => {
+  event.preventDefault();
+
+  const formElement = event.target,
+    { action, method } = formElement,
+    body = new FormData(formElement);
+
+  fetch(action, {
+    method,
+    body
+  })
+    ;
+};
+
+const formElement = document.querySelector("form");
+
+formElement.addEventListener("submit", formSubmissionHandler);
 
 
 form.addEventListener("submit", validateForm)
@@ -90,3 +78,4 @@ function validateEmail(email) {
   const patternMatches = regEx.test(email);
   return patternMatches;
 }
+
