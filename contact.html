@@ -47,36 +47,37 @@
     <div class="background-blog">
       <h1>Contact us</h1>
       <div class="contact-us-content">
-        <form id="contactForm">
+        <form id="contactForm" action="https://exam-one.eltprod.no/wp-json/contact-form-7/v1/contact-forms/57/feedback"
+          method="post">
           <div class="label">
             <label>
-              <input name="name" id="name" placeholder="* Full name">
+              <input name="your-name" id="your-name" placeholder="* Full name">
             </label>
-            <div class="formError" id="nameError">Please enter your name, more than 5 characters</div>
+            <div class="formError" id="your-nameError">Please enter your name, more than 5 characters</div>
           </div>
           <div class="label">
             <label>
-              <input name="email" id="email" placeholder="* Email">
+              <input name="your-email" id="your-email" placeholder="* Email">
             </label>
-            <div class="formError" id="emailError">Please enter a valid email-adress</div>
+            <div class="formError" id="your-emailError">Please enter a valid email-adress</div>
           </div>
           <div class="label">
             <label>
-              <input name="subject" id="subject" placeholder="* Subject">
+              <input name="your-subject" id="your-subject" placeholder="* Subject">
             </label>
-            <div class="formError" id="subjectError">
+            <div class="formError" id="your-subjectError">
               Please enter your subject, more than 15 characters
             </div>
           </div>
           <div class="label">
             <label>
-              <textarea name="message" id="message" placeholder="* Please enter your message"></textarea>
+              <textarea name="your-message" id="your-message" placeholder="* Please enter your message"></textarea>
             </label>
-            <div class="formError" id="messageError">
+            <div class="formError" id="your-messageError">
               Please enter your message, more than 25 characters
             </div>
             <p class="success">Your message is sendt!</p>
-            <button class="button_contact">Send</button>
+            <button class="button_contact" type="submit">Send</button>
           </div>
       </div>
   </main>

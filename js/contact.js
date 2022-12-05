@@ -1,12 +1,12 @@
 const form = document.querySelector("#contactForm");
-const fullName = document.querySelector("#name");
-const nameError = document.querySelector("#nameError");
-const email = document.querySelector("#email");
-const emailError = document.querySelector("#emailError");
-const subject = document.querySelector("#subject");
-const subjectError = document.querySelector("#subjectError");
-const message = document.querySelector("#message");
-const messageError = document.querySelector("#messageError");
+const fullName = document.querySelector("#your-name");
+const nameError = document.querySelector("#your-nameError");
+const email = document.querySelector("#your-email");
+const emailError = document.querySelector("#your-emailError");
+const subject = document.querySelector("#your-subject");
+const subjectError = document.querySelector("#your-subjectError");
+const message = document.querySelector("#your-message");
+const messageError = document.querySelector("#your-messageError");
 const success = document.querySelector(".success");
 const button = document.querySelector("button");
 
@@ -41,7 +41,27 @@ function validateForm() {
     success.style.display = "block";
     button.style.display = "none";
 
-  } 
+  }
+  
+  const formSubmissionHandler = (event) => {
+    event.preventDefault();
+
+    const formElement = event.target,
+      { action, method } = formElement,
+      body = new FormData(formElement);
+
+  fetch(action, {
+    method,
+    body
+  })
+
+};
+
+const formElement = document.querySelector("form");
+
+formElement.addEventListener("submit", formSubmissionHandler);
+
+
 }
 
 
