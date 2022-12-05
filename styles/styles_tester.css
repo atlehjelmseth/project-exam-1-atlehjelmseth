@@ -752,6 +752,8 @@ input::placeholder {
   justify-content: center;
   max-width: 700px;
   margin: auto;
+  display: block;
+
 }
 
 .contact-us img {
@@ -766,9 +768,10 @@ textarea {
   position: relative;
   border: 1px solid #c4c4c4;
   border-radius: 10px;
-  margin: 20px 15px 10px 15px;
+  margin: 20px auto 10px auto;
   padding: 20px;
   box-sizing: border-box;
+  width: 80%;
 }
 
 textarea {
