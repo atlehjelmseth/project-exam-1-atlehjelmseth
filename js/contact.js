@@ -62,9 +62,8 @@ const formSubmissionHandler = (event) => {
     ;
 };
 
-const formElement = document.querySelector("form");
 
-formElement.addEventListener("submit", formSubmissionHandler);
+form.addEventListener("submit", formSubmissionHandler);
 
 
 form.addEventListener("submit", validateForm)

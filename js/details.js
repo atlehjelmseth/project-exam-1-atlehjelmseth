@@ -22,8 +22,7 @@ async function blogSpecs() {
       const pictures = resultsSpec._embedded['wp:featuredmedia'][0].source_url;
       const title = resultsSpec.title.rendered;
       const paragraph = resultsSpec.excerpt.rendered;
-      const id = resultsSpec.id;
-      
+      // const comments = resultsSpec._embedded['replies'][0][0].content.rendered;
 
       spesifications.innerHTML = "";
 
@@ -41,7 +40,9 @@ async function blogSpecs() {
                           <div class="modalContent">
                             <img src="${pictures}" class="modalImg">
                             <p>${title}</p>
-                          </div>`
+                          </div>
+`
+                          
                           ;
 
                         const blogImages = document.querySelector(".product-image");
@@ -66,3 +67,4 @@ modal.addEventListener('click', function(){
   if (event.target.closest(".modalImg")) return
   modal.style.display = "none";
 });
+
