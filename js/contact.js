@@ -40,6 +40,10 @@ function validateForm() {
   if(checkLength(fullName.value, 5) === true && validateEmail(email.value) === true && checkLength(subject.value, 15) === true && checkLength(message.value, 25) === true) {
     success.style.display = "block";
     button.style.display = "none";
+    fullName.style.display = "none";
+    email.style.display = "none";
+    subject.style.display = "none";
+    message.style.display = "none";
   } 
   
 }
