@@ -29,7 +29,7 @@ async function postRestApi() {
     }
 
   }catch (error) {
-    posts.innerHTML = "error";
+    posts.innerHTML = `<p class="api_error">We cant seem to connect to the API. This is probably a part of shredders evil plan!</p>`;
     console.log("error")
   }
 

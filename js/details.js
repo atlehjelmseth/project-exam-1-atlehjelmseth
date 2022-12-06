@@ -35,7 +35,7 @@ async function blogSpecs() {
                                     <p>${paragraph}</p>
                                   </div>
                                   `;
-      pageTitle.innerHTML = `Blog | ${title}`;
+      pageTitle.innerHTML = `Blogpost | ${title}`;
       modal.innerHTML += `<div class="close"><i class="fas fa-times"></i></div>
                           <div class="modalContent">
                             <img src="${pictures}" class="modalImg">
@@ -55,7 +55,7 @@ async function blogSpecs() {
 
                         
       }catch (error) {
-        spesifications.innerHTML = "Unable to connect to the API";
+        spesifications.innerHTML = `<p class="api_error">We cant seem to connect to the API. This is probably a part of shredders evil plan!</p>`;
     }
    }
 

@@ -34,7 +34,7 @@ async function blogApi() {
                                   `;
     }
   }catch (error) {
-    posts.innerHTML = "Can not connect to the API. This must be a part of shredders evil plan";
+    posts.innerHTML = `<p class="api_error">We cant seem to connect to the API. This is probably a part of shredders evil plan!</p>`;
     console.log("error");
   }
 
@@ -66,7 +66,7 @@ async function blogApi() {
 
 
   }catch {
-    posts.innerHTML = "Can not connect to the API. This must be a part of shredders evil plan";
+    posts.innerHTML = `<p class="api_error">We cant seem to connect to the API. This is probably a part of shredders evil plan!</p>`;
     console.log("error");
   }
 
