@@ -64,8 +64,6 @@ const formSubmissionHandler = (event) => {
 
 
 form.addEventListener("submit", formSubmissionHandler);
-
-
 form.addEventListener("submit", validateForm)
 
 function checkLength(value, len) {
