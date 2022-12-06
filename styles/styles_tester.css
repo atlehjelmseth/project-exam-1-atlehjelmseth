@@ -84,6 +84,48 @@ h1 {
   background: #43960c;
 }
 
+/* loader */
+
+.loader {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  padding: 150px 0 0 0;
+}
+
+.loader i {
+  animation: loader 0.5s cubic-bezier(0,.71,.31,.99) infinite alternate;
+}
+
+.loader i:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.loader i:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.loader i:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+@keyframes loader {
+  from {transform: translateY();}
+  to  {transform: translateY(-100px);}
+}
+
+.loader_p {
+  font-family: "turtles";
+  font-size: 2rem;
+  color: #76df31;
+  text-align: center;
+  position: relative;
+  top: -110px;
+  text-shadow: 0px 0px 30px rgb(0, 0, 0);
+}
+
 /* header */ 
 
 header {
