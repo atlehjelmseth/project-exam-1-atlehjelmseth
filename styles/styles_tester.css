@@ -859,8 +859,8 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   flex: 0 0 auto;
-  margin: 0 20px 0 25px;
-  width: 78%;
+  margin: 0 20px 0 20px;
+  width: 80%;
   padding: 20px;
   text-align: center;
   background-color: #09301f;
