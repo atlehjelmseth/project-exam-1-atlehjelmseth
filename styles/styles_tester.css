@@ -785,7 +785,7 @@ input::placeholder {
 }
 
 .modalImg {
-  width: 75%;
+  width: 95%;
 }
 
 .close {
@@ -1071,6 +1071,11 @@ li {
 
 .button_front {
   margin: 20px auto 40px auto;
+}
+
+
+.modalImg {
+  width: 75%;
 }
 
 
