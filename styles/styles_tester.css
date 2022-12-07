@@ -49,6 +49,12 @@ h1 {
   padding: 30px 0px 0px 0px;
 }
 
+h2 {
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+}
+
 .api_error {
   padding: 100px 0 100px 0;
   color: white;

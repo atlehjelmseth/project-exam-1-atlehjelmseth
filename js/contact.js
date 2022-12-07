@@ -52,7 +52,7 @@ function validateForm() {
   
 }
 
-const formSubmissionHandler = (event) => {
+const sendContact = (event) => {
   event.preventDefault();
   if (checkLength(fullName.value, 5) === true && validateEmail(email.value) === true && checkLength(subject.value, 15) === true && checkLength(message.value, 25) === true) {
   const formElement = event.target,
@@ -66,8 +66,8 @@ const formSubmissionHandler = (event) => {
     ;
 }};
 
-form.addEventListener("submit", formSubmissionHandler);
-form.addEventListener("submit", validateForm)
+form.addEventListener("submit", sendContact);
+form.addEventListener("submit", validateForm);
 
 function checkLength(value, len) {
   if (value.trim().length > len) {
