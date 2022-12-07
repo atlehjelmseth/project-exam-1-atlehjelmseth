@@ -1,9 +1,11 @@
 const urlDetails = "https://exam-one.eltprod.no/wp-json/wp/v2/posts";
+const urlComments = "https://exam-one.eltprod.no/wp-json/wp/v2/comments?post=";
 const modal = document.querySelector(".modal");
 const spesifications = document.querySelector(".details");
 const pageTitle = document.querySelector("title");
 const commentsWrapper = document.querySelector(".commentsWrapper");
 const addComment = document.querySelector(".js-add-post")
+const sendComment = document.querySelector("#comment");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -13,8 +15,10 @@ console.log(id);
 
 
 const specs = urlDetails + "/" + id + "?_embed";
+const comments = urlComments + id;
 
 console.log(specs);
+console.log (comments);
 
 async function blogSpecs() {
   try {const response = await fetch(specs);
@@ -62,27 +66,36 @@ blogSpecs()
 /* Fetch comments */
 
 
-async function comments() {
-  try {const comments = await fetch(specs);
-    const commentsSpecs = await comments.json();
-    const commentsAll = commentsSpecs._embedded['replies'][0];
-    console.log(commentsAll)
+async function commentsFetch() {
+  try {const commentsGet = await fetch(comments);
+    const commentsSpecs = await commentsGet.json();
 
-    for(let i = 0; i < commentsAll.length; i++) {
-      const commentRendered = commentsAll[i].content.rendered;
+    console.log(commentsSpecs);
+
+    for(let i = 0; i < commentsSpecs.length; i++) {
+      const commentRendered = commentsSpecs[i].content.rendered;
       commentsWrapper.innerHTML += `<div class="comments">${commentRendered}</div>`
     }
+    
 
   }catch(error) {
-    commentsWrapper.innerHTML += `<div class="nocomments">No one has commented on is post yet</div>`
+    console.log("error");
   }
 }
 
 
-comments()
+commentsFetch()
 
 /* Send comments */
 
+async function sendComments() {
+  event.preventDefault();
+  console.log("button works")
+  };
+
+
+
+sendComment.addEventListener("submit", sendComments);
 
 /* Modal */
 
