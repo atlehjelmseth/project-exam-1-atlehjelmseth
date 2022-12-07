@@ -796,6 +796,19 @@ input::placeholder {
   cursor: pointer;
 }
 
+#your-comment {
+  height: 150px;
+  display: flex;
+  position: relative;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  margin: 20px auto 10px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 700px;
+}
+
 /* contact page */
 
 .contact-us-content {
@@ -813,7 +826,7 @@ input::placeholder {
 
 input,
 select,
-textarea {
+#your-message {
   display: flex;
   position: relative;
   border: 1px solid #c4c4c4;
@@ -824,7 +837,7 @@ textarea {
   width: 80%;
 }
 
-textarea {
+#your-message {
   min-height: 400px;
 }
 
@@ -1093,7 +1106,7 @@ li:hover:after {
 
 input,
 select,
-textarea {
+#your-message {
   width: 700px;
 }
 }
