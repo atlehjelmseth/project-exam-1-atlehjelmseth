@@ -10,6 +10,10 @@ const messageError = document.querySelector("#your-messageError");
 const success = document.querySelector(".success");
 const button = document.querySelector("button");
 
+
+
+
+
 function validateForm() {
   event.preventDefault();
 
@@ -50,7 +54,7 @@ function validateForm() {
 
 const formSubmissionHandler = (event) => {
   event.preventDefault();
-
+  if (checkLength(fullName.value, 5) === true && validateEmail(email.value) === true && checkLength(subject.value, 15) === true && checkLength(message.value, 25) === true) {
   const formElement = event.target,
     { action, method } = formElement,
     body = new FormData(formElement);
@@ -60,8 +64,7 @@ const formSubmissionHandler = (event) => {
     body
   })
     ;
-};
-
+}};
 
 form.addEventListener("submit", formSubmissionHandler);
 form.addEventListener("submit", validateForm)

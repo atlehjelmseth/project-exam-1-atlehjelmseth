@@ -1,9 +1,9 @@
 const urlDetails = "https://exam-one.eltprod.no/wp-json/wp/v2/posts";
-// const urlComments = "https://exam-one.eltprod.no/wp-json/wp/v2/posts";
 const modal = document.querySelector(".modal");
 const spesifications = document.querySelector(".details");
 const pageTitle = document.querySelector("title");
 const commentsWrapper = document.querySelector(".commentsWrapper");
+const addComment = document.querySelector(".js-add-post");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -83,6 +83,9 @@ comments()
 
 /* Send comments */
 
+function addPost() {
+
+}
 
 /* Modal */
 
