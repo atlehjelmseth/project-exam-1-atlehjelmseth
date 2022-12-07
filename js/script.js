@@ -1,3 +1,5 @@
+/* Hamburger menu */
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -12,3 +14,18 @@ document.querySelectorAll(".button").forEach(n => n.
     navMenu.classList.remove("active");
   })
   )
+
+  /* Sticky Navbar */
+
+window.onscroll = function() {stickyNavbar()};
+var navbar = document.querySelector(".nav_top_front");
+
+var sticky = navbar.offsetTop;
+
+function stickyNavbar() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("stickyNavbar")
+  } else {
+    navbar.classList.remove("stickyNavbar");
+  }
+}

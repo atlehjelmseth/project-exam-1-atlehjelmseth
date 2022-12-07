@@ -179,6 +179,7 @@ header {
   z-index: 1;
   margin: auto;
   box-shadow: 0 5px 35px rgb(0 0 0);
+  max-width: 1500px;
 }
 
 .nav_top_front ul {
@@ -1019,10 +1020,17 @@ footer {
 }
 
 .nav_top_front {
+  max-height: 80px;
   justify-content: center;
-  position: relative;
+  position: absolute;
+  top: 500px;
   background-color: rgba(7, 48, 21, 0.8);
   border: solid black 1px;
+}
+
+.stickyNavbar {
+  position: fixed;
+  top: 0;
 }
 
 .nav-menu {
