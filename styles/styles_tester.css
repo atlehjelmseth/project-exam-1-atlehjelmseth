@@ -842,6 +842,10 @@ input::placeholder {
 
 }
 
+iframe {
+  display: none;
+}
+
 .contact-us img {
   display: none;
 }
