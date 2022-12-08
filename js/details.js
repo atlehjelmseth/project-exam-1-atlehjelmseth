@@ -4,7 +4,6 @@ const modal = document.querySelector(".modal");
 const spesifications = document.querySelector(".details");
 const pageTitle = document.querySelector("title");
 const commentsWrapper = document.querySelector(".commentsWrapper");
-const addComment = document.querySelector(".js-add-post")
 const sendComment = document.querySelector("#comment");
 const form = document.querySelector("form");
 const queryString = document.location.search;
@@ -98,14 +97,20 @@ commentsFetch()
 
 const textComment = document.getElementById("your-comment");
 
+
+function refresh(){ refresh(function() {
+  window.location.reload();
+  }, 3000);}
+
+
 function setAction(form) {
 
   form.action = `https://exam-one.eltprod.no/wp-json/wp/v2/comments?post=${id}&content=${textComment.value}`;
   console.log("success");
-  
 }
 
 textComment.addEventListener("submit", setAction);
+textComment.addEventListener("submit", refresh);
 
 
 /* Modal */
