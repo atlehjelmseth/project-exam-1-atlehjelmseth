@@ -99,13 +99,6 @@ commentsFetch()
 
 const textComment = document.getElementById("your-comment");
 
-
-// function refresh(){
-//   window.location.reload(setTimeout(5000));
-// }
-
-
-
 function sendCommentFunction(form) {
 
   form.action = `https://exam-one.eltprod.no/wp-json/wp/v2/comments?post=${id}&content=${textComment.value}`;
@@ -116,7 +109,6 @@ function sendCommentFunction(form) {
 }
 
 textComment.addEventListener("submit", sendCommentFunction);
-// textComment.addEventListener("submit", setTimeout);
 
 
 /* Modal */
