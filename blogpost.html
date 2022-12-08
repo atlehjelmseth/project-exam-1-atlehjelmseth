@@ -61,15 +61,15 @@
       </div>
       <div class="modal"></div>
     </div>
-    <div class="commentsWrapper"></div>
-    <form id="comment" action="https://exam-one.eltprod.no/wp-json/wp/v2/comments" method="post">
+    <div class="commentsWrapper">
+    </div>
+    <form id="comment" onsubmit="return setAction(this)" target="ifrm" method="post">
       <label>
-        <textarea class="your-comment" placeholder="* Please enter your comment"></textarea>
-        <a href="">
-          <button class="button_contact" type="submit">Send!</button>
-        </a>
+        <textarea id="your-comment" class="your-comment" placeholder="* Please enter your comment"></textarea>
+        <button class="button_contact" type="submit">Send!</button>
       </label>
     </form>
+    <iframe class="ifrm" name="ifrm"></iframe>
   </main>
   <script src="/js/script.js"></script>
   <script src="/js/eyes.js"></script>
