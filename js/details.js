@@ -15,7 +15,7 @@ console.log(id);
 
 
 const specs = urlDetails + "/" + id + "?_embed";
-const comments = urlComments + id;
+const comments = urlComments + id + "&per_page=100";
 
 console.log(specs);
 console.log (comments);
@@ -98,19 +98,23 @@ commentsFetch()
 const textComment = document.getElementById("your-comment");
 
 
-function refresh(){ refresh(function() {
-  window.location.reload();
-  }, 3000);}
+// function refresh(){
+//   window.location.reload(setTimeout(5000));
+// }
 
 
-function setAction(form) {
+
+function sendCommentFunction(form) {
 
   form.action = `https://exam-one.eltprod.no/wp-json/wp/v2/comments?post=${id}&content=${textComment.value}`;
   console.log("success");
+  setTimeout(function(){
+    window.location.reload();
+  }, 4000);
 }
 
-textComment.addEventListener("submit", setAction);
-textComment.addEventListener("submit", refresh);
+textComment.addEventListener("submit", sendCommentFunction);
+// textComment.addEventListener("submit", setTimeout);
 
 
 /* Modal */
