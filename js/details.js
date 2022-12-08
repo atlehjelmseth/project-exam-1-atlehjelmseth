@@ -63,7 +63,7 @@ async function blogSpecs() {
 
 blogSpecs()
 
-/* Fetch comments */
+/* Fetch and display comments */
 
 
 async function commentsFetch() {
@@ -78,16 +78,18 @@ async function commentsFetch() {
 
     for(let i = 0; i < commentsSpecs.length; i++) {
       const commentRendered = commentsSpecs[i].content.rendered;
-      commentsWrapper.innerHTML += `<div class="comments">${commentRendered}</div>`
+      let authorName = commentsSpecs[i].author_name;
+
+      commentsWrapper.innerHTML += `<div class="comments"><p class="author_name">Author: ${authorName}</p> ${commentRendered}</div>`
     }
     if(commentsSpecs.length === 0) {
       commentsWrapper.innerHTML = `<p class="nocomments">No comments</p>`
     }
-    
+
   }catch(error) {
     console.log("error");
   }
-  
+
 }
 
 commentsFetch()
