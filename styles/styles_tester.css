@@ -832,6 +832,12 @@ input::placeholder {
   color: white;
 }
 
+.author_name {
+  text-align: left;
+  padding: 10px;
+  text-decoration: underline;
+}
+
 /* contact page */
 
 .contact-us-content {
