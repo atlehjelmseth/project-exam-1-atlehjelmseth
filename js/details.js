@@ -17,6 +17,8 @@ const id = params.get("id");
 console.log(id);
 
 
+/* Fetch and display blogpost */
+
 const specs = urlDetails + "/" + id + "?_embed";
 const comments = urlComments + id + "&per_page=100";
 

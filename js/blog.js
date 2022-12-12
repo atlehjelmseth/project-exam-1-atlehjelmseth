@@ -76,7 +76,7 @@ async function blogApi() {
 
 blogApi()
 
-/* Search Bar */
+/* Search Bar and view more posts-button*/
 
 search.onkeyup = async function (event) {
   try{const response = await fetch(url);

@@ -1,3 +1,5 @@
+/* Fetch and display blogposts for slider/carousel */
+
 const url = "https://exam-one.eltprod.no/wp-json/wp/v2/posts?_embed";
 const posts = document.querySelector(".carousel");
 
@@ -37,7 +39,7 @@ async function postRestApi() {
 
 postRestApi()
 
-/* Slider */
+/* Slider - Carousel */
 
 const productContainers = document.querySelectorAll(".slider-container");
 const nxtBtn = document.querySelectorAll(".nxt-btn");

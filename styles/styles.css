@@ -301,7 +301,224 @@ header {
   text-decoration: none;
 }
 
-/* home page */
+
+/* heads */
+
+.eyes {
+  position: absolute;
+  top: 350px;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.head {
+  width: 80%;
+  height: 900px;
+  background-color: #2b6406;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  box-shadow: inset 0px 20px 80px rgb(0, 0, 0);
+  border: solid black 4px;
+}
+
+.eyeball {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border:33px solid rgb(54, 14, 14);
+
+}
+
+/* Blue, Leonardo */
+
+.eye_left {
+  width: 24vw;
+  height: 12vw;
+  max-width: 300px;
+  max-height: 145px;
+  background-color: white;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 4.5vw solid blue;
+  transform: rotate(2deg);
+  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+}
+
+.eye_right {
+  width: 24vw;
+  height: 12vw;
+  max-width: 300px;
+  max-height: 145px;
+  background-color: white;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 4.5vw solid blue;
+  transform: rotate(-2deg);
+  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+}
+
+.bandana {
+  height: 200px;
+  background-color: blue;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  top: 200px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  border: solid black 2px;
+}
+
+/* Red, Raphael */
+
+.raphael_eye_left {
+  width: 24vw;
+  height: 12vw;
+  max-width: 300px;
+  max-height: 145px;
+  background-color: white;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 4.5vw solid red;
+  transform: rotate(2deg);
+  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+}
+
+.raphael_eye_right {
+  width: 24vw;
+  height: 12vw;
+  max-width: 300px;
+  max-height: 145px;
+  background-color: white;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 4.5vw solid red;
+  transform: rotate(-2deg);
+  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+}
+
+.raphael_bandana {
+  height: 200px;
+  background-color: red;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  top: 200px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  border: solid black 2px;
+}
+
+/* Orange, Michelangelo */
+
+.michelangelo_eye_left {
+  width: 24vw;
+  height: 12vw;
+  max-width: 300px;
+  max-height: 145px;
+  background-color: white;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 4.5vw solid orange;
+  transform: rotate(2deg);
+  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+}
+
+.michelangelo_eye_right {
+  width: 24vw;
+  height: 12vw;
+  max-width: 300px;
+  max-height: 145px;
+  background-color: white;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 4.5vw solid orange;
+  transform: rotate(-2deg);
+  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+}
+
+.michelangelo_bandana {
+  height: 200px;
+  background-color: orange;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  top: 200px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  border: solid black 2px;
+}
+
+/* Purple, Donatello */
+
+.donatello_eye_left {
+  width: 24vw;
+  height: 12vw;
+  max-width: 300px;
+  max-height: 145px;
+  background-color: white;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 4.5vw solid purple;
+  transform: rotate(2deg);
+  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+}
+
+.donatello_eye_right {
+  width: 24vw;
+  height: 12vw;
+  max-width: 300px;
+  max-height: 145px;
+  background-color: white;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 4.5vw solid purple;
+  transform: rotate(-2deg);
+  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+}
+
+.donatello_bandana {
+  height: 200px;
+  background-color: purple;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  top: 200px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  border: solid black 2px;
+}
+
+/* Home page */
 
 .background-front {
   display: block;
@@ -395,10 +612,10 @@ header {
 }
 
 
-/* home page carousel */
+/* home page carousel, slider */
 
 .carousel {
- display: flex;
+  display: flex;
   flex-direction: row;
   margin: auto;
 }
@@ -420,213 +637,89 @@ header {
   box-shadow: 0px 1px 10px rgb(255, 255, 255);
 }
 
+.slider {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  margin: 20px 0px 20px 0px;
+}
 
-/* head */
 
-.eyes {
-  position: absolute;
-  top: 350px;
-  transform: translateY(-50%);
+
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  margin: 0 20px 0 20px;
+  width: 78%;
+  padding: 20px;
   text-align: center;
+  background-color: #09301f;
+  border: solid 2px black;
+  border-radius: 15px;
 }
 
-.eye_left {
-  width: 24vw;
-  height: 12vw;
-  max-width: 300px;
-  max-height: 145px;
-  background-color: white;
-  display: inline-block;
-  margin: 40px;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 4.5vw solid blue;
-  transform: rotate(2deg);
-  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+.slider-card p {
+  color: white;
+  font-size: 1.5rem;
 }
 
-.eye_right {
-  width: 24vw;
-  height: 12vw;
-  max-width: 300px;
-  max-height: 145px;
-  background-color: white;
-  display: inline-block;
-  margin: 40px;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 4.5vw solid blue;
-  transform: rotate(-2deg);
-  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+.slider-card img {
+  border-radius: 15px;
 }
 
-.raphael_eye_left {
-  width: 24vw;
-  height: 12vw;
-  max-width: 300px;
-  max-height: 145px;
-  background-color: white;
-  display: inline-block;
-  margin: 40px;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 4.5vw solid red;
-  transform: rotate(2deg);
-  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
+
+.slider-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.raphael_eye_right {
-  width: 24vw;
-  height: 12vw;
-  max-width: 300px;
-  max-height: 145px;
-  background-color: white;
-  display: inline-block;
-  margin: 40px;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 4.5vw solid red;
-  transform: rotate(-2deg);
-  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
-}
-
-.michelangelo_eye_left {
-  width: 24vw;
-  height: 12vw;
-  max-width: 300px;
-  max-height: 145px;
-  background-color: white;
-  display: inline-block;
-  margin: 40px;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 4.5vw solid orange;
-  transform: rotate(2deg);
-  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
-}
-
-.michelangelo_eye_right {
-  width: 24vw;
-  height: 12vw;
-  max-width: 300px;
-  max-height: 145px;
-  background-color: white;
-  display: inline-block;
-  margin: 40px;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 4.5vw solid orange;
-  transform: rotate(-2deg);
-  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
-}
-
-.donatello_eye_left {
-  width: 24vw;
-  height: 12vw;
-  max-width: 300px;
-  max-height: 145px;
-  background-color: white;
-  display: inline-block;
-  margin: 40px;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 4.5vw solid purple;
-  transform: rotate(2deg);
-  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
-}
-
-.donatello_eye_right {
-  width: 24vw;
-  height: 12vw;
-  max-width: 300px;
-  max-height: 145px;
-  background-color: white;
-  display: inline-block;
-  margin: 40px;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 4.5vw solid purple;
-  transform: rotate(-2deg);
-  box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
-}
-
-.eyeball {
-  width: 40px;
-  height: 40px;
-  background-color: black;
+.pre-btn,
+.nxt-btn {
+  border: none;
+  height: 100%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  border:33px solid rgb(54, 14, 14);
-
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 0;
+  cursor: pointer;
+  padding: 0px 20px 0px 20px;
 }
 
-.head {
-  width: 80%;
-  height: 900px;
-  background-color: #2b6406;
-  display: inline-block;
-  margin: 40px;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  z-index: 0;
-  box-shadow: inset 0px 20px 80px rgb(0, 0, 0);
-  border: solid black 4px;
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
 }
 
-.bandana {
-  height: 200px;
-  background-color: blue;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  top: 200px;
-  box-shadow: 0px 5px 10px rgb(0, 0, 0);
-  border: solid black 2px;
+.nxt-btn {
+  right: 0;
 }
 
-.raphael_bandana {
-  height: 200px;
-  background-color: red;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  top: 200px;
-  box-shadow: 0px 5px 10px rgb(0, 0, 0);
-  border: solid black 2px;
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.7;
+  width: 15px;
 }
 
-.michelangelo_bandana {
-  height: 200px;
-  background-color: orange;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  top: 200px;
-  box-shadow: 0px 5px 10px rgb(0, 0, 0);
-  border: solid black 2px;
-}
 
-.donatello_bandana {
-  height: 200px;
-  background-color: purple;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  top: 200px;
-  box-shadow: 0px 5px 10px rgb(0, 0, 0);
-  border: solid black 2px;
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
 }
 
 /* Blog page */
@@ -655,10 +748,7 @@ header {
 
 input::placeholder {
   font-size: 1rem;
-
 }
-
-
 
 .blog-container {
   display: flex;
@@ -674,8 +764,6 @@ input::placeholder {
   transition: 0.2s;
   border-radius: 10px;
 }
-
-
 
 .button_blog {
   background-color: #53CC00;
@@ -880,7 +968,6 @@ input::placeholder {
   max-width: 700px;
   margin: auto;
   display: block;
-
 }
 
 iframe {
@@ -953,6 +1040,7 @@ select,
 
 .button_contact:hover {
   cursor: pointer;
+  box-shadow: 0px 1px 10px rgb(255, 255, 255);
 }
 
 
@@ -972,90 +1060,7 @@ footer {
 
 /* slider */
 
-.slider {
-  position: relative;
-  overflow: hidden;
-  padding: 20px;
-  margin: 20px 0px 20px 0px;
-}
 
-
-
-.slider-container {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
-
-.slider-container::-webkit-scrollbar {
-  display: none;
-}
-
-.slider-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 0 0 auto;
-  margin: 0 20px 0 20px;
-  width: 78%;
-  padding: 20px;
-  text-align: center;
-  background-color: #09301f;
-  border: solid 2px black;
-  border-radius: 15px;
-}
-
-.slider-card p {
-  color: white;
-  font-size: 1.5rem;
-}
-
-.slider-card img {
-  border-radius: 15px;
-}
-
-
-.slider-thumb {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.pre-btn,
-.nxt-btn {
-  border: none;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: 0;
-  cursor: pointer;
-  padding: 0px 20px 0px 20px;
-}
-
-.pre-btn {
-  left: 0;
-  transform: rotate(180deg);
-}
-
-.nxt-btn {
-  right: 0;
-}
-
-
-.pre-btn img,
-.nxt-btn img {
-  opacity: 0.7;
-  width: 15px;
-}
-
-
-.pre-btn:hover img,
-.nxt-btn:hover img {
-  opacity: 1;
-}
 
 
 
