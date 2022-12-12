@@ -17,7 +17,7 @@ async function postRestApi() {
       const id = results[i].id;
 
       posts.innerHTML += `
-                            <div class="company-card">
+                            <div class="slider-card">
                              <div class="product-image">
                              <img src="${pictures}" class="product-thumb" alt="kommer">
                             </div>
@@ -39,7 +39,7 @@ postRestApi()
 
 /* Slider */
 
-const productContainers = document.querySelectorAll(".company-container");
+const productContainers = document.querySelectorAll(".slider-container");
 const nxtBtn = document.querySelectorAll(".nxt-btn");
 const preBtn = document.querySelectorAll(".pre-btn");
 
