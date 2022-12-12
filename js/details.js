@@ -7,6 +7,7 @@ const commentsWrapper = document.querySelector(".commentsWrapper");
 const sendComment = document.querySelector("#comment");
 const h2Comments = document.querySelector(".h2_comments");
 const sendButton = document.querySelector(".button_contact");
+const sendLoader = document.querySelector(".sendLoader");
 const form = document.querySelector("form");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -122,6 +123,7 @@ function sendCommentFunction(form) {
     window.location.reload();
   }, 4000);
   sendButton.style.display = "none";
+  sendLoader.style.display = "block";
 }
 
 textComment.addEventListener("submit", sendCommentFunction);

@@ -838,6 +838,40 @@ input::placeholder {
   text-decoration: underline;
 }
 
+.sendLoader {
+  display: none;
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+
+.sendLoader i{
+  font-size: 3rem;
+  animation: send_loader 2s linear infinite;
+  text-align: center;
+  margin: 0;
+}
+
+@keyframes send_loader{
+  0%{
+    transform: rotateX(0) rotateY(0);
+  }
+  50%{
+    transform: rotateX(0) rotateY(180deg);
+  }
+  75%{
+    transform: rotateX(180deg) rotateY(0);
+  }
+}
+
+.loader_p_send {
+  font-family: "turtles";
+  font-size: 2rem;
+  color: #76df31;
+  text-align: center;
+  text-shadow: 0px 0px 30px rgb(0, 0, 0);
+  margin: 0;
+}
+
 
 /* contact page */
 
