@@ -61,12 +61,14 @@
       </div>
       <div class="modal"></div>
     </div>
+    <div class="h2_comments"></div>
     <div class="commentsWrapper">
     </div>
     <form id="comment" onsubmit="sendCommentFunction(this)" target="ifrm" method="post">
       <label>
         <textarea id="your-comment" class="your-comment" placeholder="* Please enter your comment"></textarea>
         <button class="button_contact" type="submit">Send!</button>
+        <div class="sendLoader">Sending..</div>
       </label>
     </form>
     <iframe class="ifrm" name="ifrm"></iframe>
