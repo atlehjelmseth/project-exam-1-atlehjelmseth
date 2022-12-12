@@ -12,6 +12,8 @@ async function blogApi() {
 
     posts.innerHTML = "";
 
+    console.log(results)
+
     for(let i = 0; i < results.length; i++) {
       if (i === 10) { break; }
 
@@ -19,13 +21,13 @@ async function blogApi() {
       const title = results[i].title.rendered;
       const paragraph = results[i].excerpt.rendered;
       const id = results[i].id;
-
-
+      const altText = results[i]._embedded['wp:featuredmedia'][0].alt_text;
+      
 
       posts.innerHTML += `
                             <div class="blog-container">
                              <div class="product-image">
-                             <img src="${pictures}" class="product-thumb" alt="kommer">
+                             <img src="${pictures}" class="product-thumb" alt="${altText}">
                             </div>
                             <p class="blog-title">${title}</p>
                             <p>${paragraph}</p>
