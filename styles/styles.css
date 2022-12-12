@@ -881,10 +881,12 @@ input::placeholder {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .modalImg {
-  width: 95%;
+  width: 100%;
+  padding: 10px;
 }
 
 .close {
@@ -1187,11 +1189,6 @@ li {
 
 .button_front {
   margin: 20px auto 40px auto;
-}
-
-
-.modalImg {
-  width: 75%;
 }
 
 
