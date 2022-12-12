@@ -695,7 +695,7 @@ input::placeholder {
 }
 
 .button_view_more {
-  display: flex;
+  display: none;
   margin: 0 auto 40px auto;
   font-family: "turtles";
   text-transform: uppercase;

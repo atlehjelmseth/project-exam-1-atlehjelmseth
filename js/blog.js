@@ -32,7 +32,9 @@ async function blogApi() {
                             <a href="blogpost.html?id=${id}" class="button_blog">Read more</a>
                             </div>
                                   `;
+      button.style.display = "flex";
     }
+
   }catch (error) {
     posts.innerHTML = `<p class="api_error">We cant seem to connect to the API. This is probably a part of shredders evil plan!</p>`;
     console.log("error");
