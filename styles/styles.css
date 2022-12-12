@@ -975,6 +975,7 @@ input::placeholder {
 
 .aboutus-container p {
   color: white;
+  text-align: center;
 }
 
 .aboutusimg {
