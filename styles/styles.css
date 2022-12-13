@@ -901,6 +901,11 @@ input::placeholder {
   padding: 10px;
 }
 
+.modal p {
+  padding: 0 15px 0 15px;
+  text-align: center;
+}
+
 .close {
   position: absolute;
   top: 2rem;
