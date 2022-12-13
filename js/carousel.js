@@ -15,13 +15,13 @@ async function postRestApi() {
       if (i === 9) { break; }
       const pictures = results[i]._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url;
       const title = results[i].title.rendered;
-      const paragraph = results[i].excerpt.rendered;
+      const altText =  results[i]._embedded['wp:featuredmedia'][0].alt_text;
       const id = results[i].id;
 
       posts.innerHTML += `
                             <div class="slider-card">
                              <div class="product-image">
-                             <img src="${pictures}" class="product-thumb" alt="kommer">
+                             <img src="${pictures}" class="product-thumb" alt="${altText}">
                             </div>
                             <p>${title}</p>
                             <a href="blogpost.html?id=${id}" class="button_carousel">Read more</a>
