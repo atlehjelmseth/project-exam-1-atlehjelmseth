@@ -673,7 +673,7 @@ li {
 
 .slider-card p {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   height: 60px;
 }
 
@@ -735,6 +735,11 @@ li {
   display: flex;
   flex-direction: column;
   margin: 15px;
+}
+
+.blog-title {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 
@@ -856,6 +861,11 @@ input::placeholder {
   padding: 0px 0px 0px 20px;
 }
 
+.post_author {
+  text-align: center;
+  font-style: italic;
+}
+
 .modal {
   position: fixed;
   display: none;
@@ -920,6 +930,10 @@ input::placeholder {
   width: 90%;
   max-width: 700px;
   margin: 20px auto 20px auto;
+}
+
+.comments p {
+  padding: 0 15px 0 15px;
 }
 
 .nocomments {
