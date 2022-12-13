@@ -32,21 +32,18 @@ async function blogSpecs() {
       console.log(resultsSpec)
       const pictures = resultsSpec._embedded['wp:featuredmedia'][0].source_url;
       const title = resultsSpec.title.rendered;
-      const paragraph = resultsSpec.excerpt.rendered;
+      // const paragraph = resultsSpec.excerpt.rendered;
       const blogAuthor = resultsSpec._embedded.author[0].name;
 
-      console.log(blogAuthor)
+      console.log(resultsSpec.content.rendered)
 
       spesifications.innerHTML = "";
 
       spesifications.innerHTML += `<div class="details-container">
                                     <button onclick="history.back()"><< Go Back</button>
                                     <h1>${title}</h1>
-                                    <p class="post_author">Written by: ${blogAuthor}</p>
-                                    <div class="product-image">
-                                      <img src="${pictures}" class="product-thumb" alt="kommer">
-                                    </div>
-                                    <p>${paragraph}</p>
+                                    <p class="post_author">Written by: ${blogAuthor}</p
+                                    ${resultsSpec.content.rendered}
                                   </div>
                                   `;
       pageTitle.innerHTML = `Blogpost | ${title}`;
@@ -54,12 +51,9 @@ async function blogSpecs() {
                           <div class="modalContent">
                             <img src="${pictures}" class="modalImg">
                             <p>${title}</p>
-                          </div>
-`
+                          </div>`                          ;
 
-                          ;
-
-                        const blogImages = document.querySelector(".product-image");
+                        const blogImages = document.querySelector(".details-container img");
                         blogImages.addEventListener('click', function(){
                           modal.style.display = "flex";
                         });
