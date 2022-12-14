@@ -132,7 +132,7 @@ h2 {
 }
 
 .loader_p {
-  font-family: "turtles";
+  font-family: "turtles", serif;
   font-size: 2rem;
   color: var(--light-color-green);;
   text-align: center;
@@ -225,7 +225,7 @@ li {
 }
 
 .home_header p {
-  font-family: "turtles";
+  font-family: "turtles", serif;
   margin-left: 10px;
 }
 
@@ -558,11 +558,11 @@ li {
   color: white;
   background-color: red;
   border: solid 2px black;
-  font-family: "halfshell";
+  font-family: "halfshell", serif;
 }
 
 .front_text_third {
-  font-family: "turtles";
+  font-family: "turtles", serif;
   font-size: 80px;
   margin-top: 10px;
   color: var(--light-color-green);;
@@ -582,7 +582,7 @@ li {
   margin: auto;
   background-color: red;
   border-radius: 10px;
-  font-family: "turtles";
+  font-family: "turtles", serif;
   text-shadow: 1px 1px 20px rgb(3, 65, 22);
 }
 
@@ -611,9 +611,24 @@ li {
 
 .dons_pizza {
   display: none;
+  flex-direction: column;
   background-color: var(--dark-color-green);;
   height: 500px;
+  padding: 30px 0 0 0;
 }
+
+.dons_pizza img {
+  display: flex;
+  max-width: 400px;
+  margin: auto;
+}
+
+.dons_pizza p {
+  max-width: 500px;
+ text-align: center;
+ margin: auto;
+}
+
 
 /* home page carousel, slider */
 
@@ -630,7 +645,7 @@ li {
   margin: auto;
   border-radius: 10px;
   border: solid 2px black;
-  font-family: "turtles";
+  font-family: "turtles", serif;
   font-size: 1.2rem;
   color: black;
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
@@ -781,7 +796,7 @@ input::placeholder {
   max-width: 150px;
   border-radius: 10px;
   border: solid 2px black;
-  font-family: "turtles";
+  font-family: "turtles", serif;
   font-size: 1.2rem;
   color: black;
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
@@ -795,7 +810,7 @@ input::placeholder {
 .button_view_more {
   display: none;
   margin: 0 auto 40px auto;
-  font-family: "turtles";
+  font-family: "turtles", serif;
   text-transform: uppercase;
   padding: 15px;
   background-color:red;
@@ -833,7 +848,7 @@ input::placeholder {
 
 .details-container button {
   display: block;
-  font-family: "turtles";
+  font-family: "turtles", serif;
   max-width: 150px;
   margin: 0 0 50px 0;
   text-align: center;
@@ -982,7 +997,7 @@ input::placeholder {
 }
 
 .loader_p_send {
-  font-family: "turtles";
+  font-family: "turtles", serif;
   font-size: 2rem;
   color: var(--light-color-green);;
   text-align: center;
@@ -1061,7 +1076,7 @@ select,
 
 .success {
   text-align: center;
-  font-family: "turtles";
+  font-family: "turtles", serif;
   color: rgb(255, 0, 0);
   font-size: 2.5rem;
   text-shadow: 0px 0px 5px rgb(0 0 0);
@@ -1088,7 +1103,7 @@ select,
   width: 200px;
   border-radius: 10px;
   border: solid 2px black;
-  font-family: "turtles";
+  font-family: "turtles", serif;
   font-size: 1.2rem;
   color: black;
   text-shadow: 0px 0px 5px rgb(255 255 255);
