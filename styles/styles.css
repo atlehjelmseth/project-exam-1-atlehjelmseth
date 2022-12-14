@@ -823,8 +823,10 @@ input::placeholder {
   display: flex;
   max-width: 800px;
   flex-direction: column;
-  margin: auto;
+  margin: 0 auto 60px auto;
+  padding-bottom: 20px;
   color: white;
+  border-bottom: solid 1px;
 }
 
 .details-container button {
@@ -855,6 +857,7 @@ input::placeholder {
   box-shadow: 0 5px 15px rgb(0 0 0);
   border: solid 2px black;
   height: 100%;
+  margin-bottom: 40px;
 }
 
 .author {
