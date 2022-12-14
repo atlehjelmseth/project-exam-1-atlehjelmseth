@@ -4,7 +4,7 @@ const button = document.querySelector(".button_view_more");
 const posts = document.querySelector(".blog");
 const search = document.querySelector(".search");
 
-/* Fetching blogposts */
+/* Fetching blogposts and view more */
 
 async function blogApi() {
   try{const response = await fetch(url);
