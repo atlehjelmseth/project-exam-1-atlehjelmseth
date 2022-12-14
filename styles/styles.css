@@ -1147,9 +1147,9 @@ footer {
 
 @media (min-width: 850px) {
 
-  h1 {
-    font-size: 2.5rem;
-  }
+h1 {
+  font-size: 2.5rem;
+}
 
 .background-top {
   display: flex;
@@ -1215,6 +1215,10 @@ li {
 
 .button_front {
   margin: 20px auto 40px auto;
+}
+
+.blog-title {
+  font-size: 2.5rem;
 }
 
 
