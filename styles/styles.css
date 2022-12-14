@@ -1,5 +1,7 @@
 /* Global styles */
 
+@import "variables.css";
+
 @font-face {
   font-family: 'turtles';
   src: url(/fonts/Turtles.otf);
@@ -13,7 +15,7 @@ body {
   margin: auto;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.2rem;
-  background-color: #041b0d;
+  background-color: var(--darkest-color-green);
   max-width: 1500px;
   min-height: 100vh;
   animation-name: smooth;
@@ -89,12 +91,12 @@ h2 {
 
 ::-webkit-scrollbar-thumb {
   background: #2b6406;
-  border: 2px solid #76df31;
+  border: 2px solid var(--light-color-green);;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #43960c;
+  background: var(--light-color-green);;
 }
 
 /* loader */
@@ -132,7 +134,7 @@ h2 {
 .loader_p {
   font-family: "turtles";
   font-size: 2rem;
-  color: #76df31;
+  color: var(--light-color-green);;
   text-align: center;
   position: relative;
   top: -110px;
@@ -181,7 +183,7 @@ header {
   align-items: center;
   width: 100%;
   min-height: 80px;
-  background-color: #09301f;
+  background-color: var(--dark-color-green);;
   z-index: 1;
   margin: auto;
   box-shadow: 0 5px 35px rgb(0 0 0);
@@ -206,7 +208,7 @@ li {
  li:after {
   content: "";
   position: absolute;
-  background-color: #76df31;
+  background-color: var(--light-color-green);
   height: 5px;
   width: 0%;
   left: 50%;
@@ -228,14 +230,14 @@ li {
 }
 
 .fa-user-ninja {
-  color:#76df31;
+  color:var(--light-color-green);;
   font-size: 28px;
   margin-left: 24px;
 }
 
 .active_site {
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
-  border-bottom: solid 5px #76df31;
+  border-bottom: solid 5px var(--light-color-green);
   padding-bottom: 6px;
 }
 
@@ -263,7 +265,7 @@ li {
   margin: 6px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #76df31;
+  background-color: var(--light-color-green);;
 }
 
 .nav-menu {
@@ -280,7 +282,7 @@ li {
 .nav-menu.active {
   right: 0;
   display: block;
-  background-color: #09301f;
+  background-color: var(--dark-color-green);;
   width: 100%;
   height: 100%;
   transition: 0.3s;
@@ -310,7 +312,7 @@ li {
 .head {
   width: 80%;
   height: 900px;
-  background-color: #2b6406;
+  background-color: var(--head-color);
   display: inline-block;
   margin: 40px;
   border-radius: 50%;
@@ -563,7 +565,7 @@ li {
   font-family: "turtles";
   font-size: 80px;
   margin-top: 10px;
-  color: #53CC00;
+  color: var(--light-color-green);;
   padding: 0;
   text-shadow: 0px 5px 10px rgb(0, 0, 0);
   position: relative;
@@ -574,7 +576,7 @@ li {
 .button_front {
   max-width: 200px;
   padding: 10px 40px 10px 40px;
-  border: 2px solid #071A30;
+  border: 2px solid black;
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: auto;
@@ -592,7 +594,7 @@ li {
 
 .latest_posts {
   text-align: center;
-  background-color: #09301f;
+  background-color: var(--dark-color-green);;
   width: 100%;
   margin: auto;
   padding: 1px 0 0 0;
@@ -609,7 +611,7 @@ li {
 
 .dons_pizza {
   display: none;
-  background-color: #09301f;
+  background-color: var(--dark-color-green);;
   height: 500px;
 }
 
@@ -622,7 +624,7 @@ li {
 }
 
 .button_carousel {
-  background-color: #53CC00;
+  background-color: var(--light-color-green);;
   padding: 10px;
   max-width: 150px;
   margin: auto;
@@ -666,7 +668,7 @@ li {
   width: 78%;
   padding: 20px;
   text-align: center;
-  background-color: #09301f;
+  background-color: var(--dark-color-green);;
   border: solid 2px black;
   border-radius: 15px;
 }
@@ -763,7 +765,7 @@ input::placeholder {
   flex-direction: column;
   max-width: 800px;
   margin: 50px auto 50px auto;
-  background-color: #09301f;
+  background-color: var(--dark-color-green);;
   text-align: center;
   padding: 20px;
   color: white;
@@ -774,7 +776,7 @@ input::placeholder {
 }
 
 .button_blog {
-  background-color: #53CC00;
+  background-color: var(--light-color-green);;
   padding: 10px;
   max-width: 150px;
   border-radius: 10px;
@@ -919,7 +921,6 @@ input::placeholder {
   height: 150px;
   display: flex;
   position: relative;
-  border: 1px solid #c4c4c4;
   border-radius: 10px;
   margin: 20px auto 10px auto;
   padding: 20px;
@@ -933,7 +934,7 @@ input::placeholder {
   font-style: italic;
   color: white;
   background-color: rgba(255, 255, 255, 0.185);
-  border: solid 3px #76df31;
+  border: solid 3px var(--light-color-green);;
   text-align: center;
   width: 90%;
   max-width: 700px;
@@ -983,7 +984,7 @@ input::placeholder {
 .loader_p_send {
   font-family: "turtles";
   font-size: 2rem;
-  color: #76df31;
+  color: var(--light-color-green);;
   text-align: center;
   text-shadow: 0px 0px 30px rgb(0, 0, 0);
   margin: 0;
@@ -1035,7 +1036,7 @@ select,
 #your-message {
   display: flex;
   position: relative;
-  border: 1px solid #c4c4c4;
+  border: 1px solid white;
   border-radius: 10px;
   margin: 20px auto 10px auto;
   padding: 20px;
@@ -1069,6 +1070,11 @@ select,
   -webkit-text-stroke: 0.5px black;
 }
 
+#your-name {
+  background-color: white;
+}
+
+
 #message {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1rem;
@@ -1077,7 +1083,7 @@ select,
 .button_contact {
   display: flex;
   justify-content: center;
-  background-color: #53CC00;
+  background-color: var(--light-color-green);;
   padding: 10px;
   width: 200px;
   border-radius: 10px;
@@ -1103,7 +1109,7 @@ footer {
   text-align: center;
   color: white;
   padding: 20px 0px 20px 0px;
-  background-color: #09301f;
+  background-color: var(--dark-color-green);;
   border-top: solid black 1px;
   font-size: 1rem;
 }
