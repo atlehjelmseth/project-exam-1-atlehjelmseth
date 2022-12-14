@@ -896,8 +896,7 @@ input::placeholder {
 }
 
 .modalImg {
-  width: 120%;
-  padding: 10px;
+  width: 100%;
 }
 
 .modal p {
@@ -1225,6 +1224,11 @@ li {
 
 .slider-card {
   width: 400px;
+}
+
+.modalImg {
+  width: 120%;
+  padding: 10px;
 }
 
 ul {
