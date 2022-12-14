@@ -817,7 +817,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   margin: 15px;
-  padding: 0 20px 20px 20px;
+
 }
 
 .details-container {
@@ -825,7 +825,6 @@ input::placeholder {
   max-width: 800px;
   flex-direction: column;
   margin: auto;
-
   color: white;
 }
 
