@@ -54,10 +54,13 @@ async function blogApi() {
         const title2 = results2[i].title.rendered;
         const paragraph2 = results2[i].excerpt.rendered;
         const id2 = results2[i].id;
+        const alt2 = results2[i]._embedded['wp:featuredmedia'][0].alt_text;
+
+        console.log(alt2)
         posts.innerHTML += `
                             <div class="blog-container">
                              <div class="product-image">
-                             <img src="${pictures2}" class="product-thumb" alt="kommer">
+                             <img src="${pictures2}" class="product-thumb" alt="${alt2}">
                             </div>
                             <p class="blog-title">${title2}</p>
                             <p>${paragraph2}</p>
@@ -78,7 +81,7 @@ async function blogApi() {
 
 blogApi()
 
-/* Search Bar and view more posts-button*/
+/* Search Bar */
 
 search.onkeyup = async function (event) {
   try{const response = await fetch(url);
@@ -102,12 +105,12 @@ search.onkeyup = async function (event) {
       const titleFiltered = filteredBlog[i].title.rendered;
       const paragraphFiltered = filteredBlog[i].excerpt.rendered;
       const idFiltered = filteredBlog[i].id;
-
+      const altFiltered = filteredBlog[i]._embedded['wp:featuredmedia'][0].alt_text;
 
       posts.innerHTML += `
                             <div class="blog-container">
                              <div class="product-image">
-                             <img src="${picturesFiltered}" class="product-thumb" alt="kommer">
+                             <img src="${picturesFiltered}" class="product-thumb" alt="${altFiltered}">
                             </div>
                             <p class="blog-title">${titleFiltered}</p>
                             <p>${paragraphFiltered}</p>
