@@ -110,7 +110,6 @@ const textComment = document.getElementById("your-comment");
 function sendCommentFunction(form) {
   if(textComment.value.length > 0) {
   form.action = `https://exam-one.eltprod.no/wp-json/wp/v2/comments?post=${id}&content=${textComment.value}`;
-  console.log("success");
   setTimeout(function(){
     window.location.reload();
   }, 4000);
@@ -118,7 +117,6 @@ function sendCommentFunction(form) {
   sendLoader.style.display = "block";
   errorMessage.style.display = "none";
 }else {
-  console.log("to short");
   errorMessage.style.display = "block";
 }
 
