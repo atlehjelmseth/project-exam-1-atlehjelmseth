@@ -980,7 +980,7 @@ input::placeholder {
 }
 
 .sendLoader i{
-  font-size: 3rem;
+  font-size: 2.8rem;
   animation: send_loader 2s linear infinite;
   text-align: center;
   margin: 0;
