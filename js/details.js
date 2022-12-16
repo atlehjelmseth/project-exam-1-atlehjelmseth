@@ -8,6 +8,7 @@ const sendComment = document.querySelector("#comment");
 const h2Comments = document.querySelector(".h2_comments");
 const sendButton = document.querySelector(".button_contact");
 const sendLoader = document.querySelector(".sendLoader");
+const errorMessage = document.querySelector(".formError");
 const form = document.querySelector("form");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -73,7 +74,7 @@ async function commentsFetch() {
 
 
     commentsWrapper.innerHTML = "";
-    
+
 
     for(let i = 0; i < commentsSpecs.length; i++) {
       const commentRendered = commentsSpecs[i].content.rendered;
@@ -86,7 +87,7 @@ async function commentsFetch() {
         commentsWrapper.innerHTML += `<div class="comments"><p class="author_name">Author: ${authorName}</p>${commentRendered}</div>`
       }
 
-      
+
     }
     if(commentsSpecs.length === 0) {
       h2Comments.innerHTML = `<h2>Comments (${numberOfComments}):</h2>`
@@ -107,7 +108,7 @@ async function commentsFetch() {
 const textComment = document.getElementById("your-comment");
 
 function sendCommentFunction(form) {
-
+  if(textComment.value.length > 0) {
   form.action = `https://exam-one.eltprod.no/wp-json/wp/v2/comments?post=${id}&content=${textComment.value}`;
   console.log("success");
   setTimeout(function(){
@@ -115,6 +116,12 @@ function sendCommentFunction(form) {
   }, 4000);
   sendButton.style.display = "none";
   sendLoader.style.display = "block";
+  errorMessage.style.display = "none";
+}else {
+  console.log("to short");
+  errorMessage.style.display = "block";
+}
+
 }
 
 textComment.addEventListener("submit", sendCommentFunction);
