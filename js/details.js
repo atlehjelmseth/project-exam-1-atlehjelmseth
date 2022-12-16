@@ -101,7 +101,7 @@ async function commentsFetch() {
     }
 
   }catch(error) {
-    // commentsWrapper.innerHTML = `<p class="api_error">The comment section does not seem to connect to the API. This is probably a part of shredders evil plan!</p>`;
+    commentsWrapper.innerHTML = `<p class="api_error">The comment section does not seem to connect to the API. This is probably a part of shredders evil plan!</p>`;
     sendComment.style.display = "none";
     h2Comments.style.display = "none";
   }
