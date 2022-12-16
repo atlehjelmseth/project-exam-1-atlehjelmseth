@@ -83,7 +83,7 @@ async function commentsFetch() {
         h2Comments.innerHTML = `<h2>Comments (${numberOfComments}):</h2>`
       } else {
         h2Comments.innerHTML = `<h2>Comments (${numberOfComments}):</h2>`
-        commentsWrapper.innerHTML += `<div class="comments"><p class="author_name">Author: ${authorName}</p> ${commentRendered}</div>`
+        commentsWrapper.innerHTML += `<div class="comments"><p class="author_name">Author: ${authorName}</p>${commentRendered}</div>`
       }
 
       
