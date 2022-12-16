@@ -57,7 +57,7 @@ async function blogSpecs() {
                         blogImages.addEventListener('click', function(){
                           modal.style.display = "flex";
                         });
-
+                        commentsFetch()
       }catch (error) {
         spesifications.innerHTML = `<p class="api_error">We cant seem to connect to the API. This is probably a part of shredders evil plan!</p>`;
         commentsWrapper.style.display = "none";
@@ -108,7 +108,7 @@ async function commentsFetch() {
 
 }
 
-commentsFetch()
+
 
 
 /* Send comments */
