@@ -14,28 +14,21 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 
-console.log(id);
-
 
 /* Fetch and display blogpost */
 
 const specs = urlDetails + "/" + id + "?_embed";
 const comments = urlComments + id + "&per_page=100";
 
-console.log(specs);
-console.log (comments);
-
 async function blogSpecs() {
   try {const response = await fetch(specs);
        const resultsSpec = await response.json();
 
-      console.log(resultsSpec)
       const pictures = resultsSpec._embedded['wp:featuredmedia'][0].source_url;
       const title = resultsSpec.title.rendered;
-      // const paragraph = resultsSpec.excerpt.rendered;
+      const content = resultsSpec.content.rendered;
       const blogAuthor = resultsSpec._embedded.author[0].name;
 
-      console.log(resultsSpec.content.rendered)
 
       spesifications.innerHTML = "";
 
@@ -43,7 +36,7 @@ async function blogSpecs() {
                                     <button onclick="history.back()"><< Go Back</button>
                                     <h1>${title}</h1>
                                     <p class="post_author">Written by: ${blogAuthor}</p
-                                    ${resultsSpec.content.rendered}
+                                    ${content}
                                   </div>
                                   `;
       pageTitle.innerHTML = `Blogpost | ${title}`;
@@ -107,8 +100,6 @@ async function commentsFetch() {
   }
 
 }
-
-
 
 
 /* Send comments */
