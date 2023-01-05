@@ -932,7 +932,13 @@ input::placeholder {
   top: 2rem;
   right: 2rem;
   font-size: 1.5rem;
+  opacity: 0.8;
   cursor: pointer;
+}
+
+.close:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .your-comment {
