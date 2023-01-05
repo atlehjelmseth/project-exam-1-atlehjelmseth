@@ -522,7 +522,8 @@ li {
   display: block;
   width: 100%;
   min-height: 600px;
-  background-image: linear-gradient(0deg, rgba(255, 230, 0, 0.1), rgba(255, 230, 0, 0.1)), url(/images/leonardo_front.jpg);
+  background-image: linear-gradient(0deg, rgba(255, 230, 0, 0.1), rgba(255, 230, 0, 0.1)), url(/images/leonardo_front_smaller.jpg);
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 10;
@@ -548,6 +549,7 @@ li {
   margin: 0 0 10px 0;
   padding: 0;
   color: white;
+  text-shadow: 1px 1px 1px black, 0 0 1em black, 0 0 0.2em black;
 }
 
 .front_text_second {
@@ -1176,6 +1178,11 @@ h1 {
 
 .background-top {
   display: flex;
+}
+
+.background-front {
+  background-image: linear-gradient(0deg, rgba(255, 230, 0, 0.1), rgba(255, 230, 0, 0.1)), url(/images/leonardo_front.jpg);
+  background-position: center top;
 }
 
 .bar {
