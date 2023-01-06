@@ -12,8 +12,6 @@ async function blogApi() {
 
     posts.innerHTML = "";
 
-    console.log(results)
-
     for(let i = 0; i < results.length; i++) {
       if (i === 10) { break; }
 
@@ -56,7 +54,6 @@ async function blogApi() {
         const id2 = results2[i].id;
         const alt2 = results2[i]._embedded['wp:featuredmedia'][0].alt_text;
 
-        console.log(alt2)
         posts.innerHTML += `
                             <div class="blog-container">
                              <div class="product-image">
@@ -95,7 +92,6 @@ search.onkeyup = async function (event) {
           }
       });
 
-      console.log(filteredBlog);
       button.style.display = "none";
 
       posts.innerHTML = "";
