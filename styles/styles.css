@@ -710,8 +710,8 @@ li {
   object-fit: cover;
 }
 
-.pre-btn,
-.nxt-btn {
+.pre-button,
+.next-button {
   border: none;
   height: 100%;
   position: absolute;
@@ -724,25 +724,25 @@ li {
   padding: 0px 20px 0px 20px;
 }
 
-.pre-btn {
+.pre-button {
   left: 0;
   transform: rotate(180deg);
 }
 
-.nxt-btn {
+.next-button {
   right: 0;
 }
 
 
-.pre-btn img,
-.nxt-btn img {
+.pre-button img,
+.next-button img {
   opacity: 0.7;
   width: 15px;
 }
 
 
-.pre-btn:hover img,
-.nxt-btn:hover img {
+.pre-button:hover img,
+.next-button:hover img {
   opacity: 1;
 }
 
