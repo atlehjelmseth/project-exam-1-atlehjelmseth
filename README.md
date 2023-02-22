@@ -1,17 +1,17 @@
 # Project Exam 1 - Atle Hjelmseth - Teenage mutant ninja turtles-blog
 
-![image](https://github.com/atlehjelmseth/semester-project1-csm/blob/main/csm.png)
+![image](https://github.com/atlehjelmseth/atlehjelmseth/blob/main/projectexam.png)
 
 
 ## Description
 
-A webpage for a science museum that contains:
+A blog for Teenage Mutant Ninja Turtles:
 
-- Landing page
-- Explore page
-- Events page
-- Visit Page
-- Get involved page
+- Landing page with blogpost-slider from a rest API
+- Blog page with blogposts from rest API
+- Blog spesific page from rest API with comments
+- About us page
+- Fully working contact us page, that send to the API
 
 ## Built With
 
@@ -19,6 +19,7 @@ You can list a the tech stack that you've used over here
 
 - HTML
 - CSS
+- JavaScript
 
 ## Getting Started
 
@@ -27,7 +28,7 @@ You can list a the tech stack that you've used over here
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:atlehjelmseth/semester-project1-csm.git
+git clone git@github.com:atlehjelmseth/project-exam-1-atlehjelmseth.git
 ```
 
 2. Install the dependencies:
