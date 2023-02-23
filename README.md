@@ -1,6 +1,6 @@
 # Project Exam 1 - Atle Hjelmseth - Teenage mutant ninja turtles-blog
 
-![image](https://github.com/atlehjelmseth/atlehjelmseth/blob/main/projectexam.png)
+![image](https://github.com/atlehjelmseth/atlehjelmseth/blob/main/images/projectexam.png)
 
 
 ## Description
